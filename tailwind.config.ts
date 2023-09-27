@@ -12,7 +12,7 @@ const config: Config = {
     },
     fontSize:{
       md: "1.6rem",
-      lg: ["2.2rem", "1,3"],
+      lg: ["2.2rem", "1.3"],
       "5xl": ["8rem", "1"] ,
     },
     colors: {
