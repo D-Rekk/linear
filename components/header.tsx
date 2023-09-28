@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Container } from "./container"
 import { Logo } from "./icons/logo"
+import Button from "./button"
 
 const navElements = [
   "Features",
@@ -24,7 +25,7 @@ export default function Header() {
           <nav className="flex">
             <ul className="flex flex-row mx-4 gap-4 items-center">
               {navElements.map((element) =>
-                <li key={element} className="hover:text-linkHover medium ml-6 text-sm">
+                <li key={element} className="hover:text-gray transition-medium ml-6 text-sm">
                   <Link href="#">{element}</Link>
                 </li>
               )}
@@ -34,7 +35,7 @@ export default function Header() {
 
         <div className="ml-auto text-sm flex items-center gap-6">
           <Link href="#">Log In</Link>
-          <Link href="#" className="rounded-full bg-brand-bg">Sign In</Link>
+          <Button href="#" variant="primary">Sign In</Button>
         </div>
       </Container>
     </header>

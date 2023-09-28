@@ -12,6 +12,7 @@ const config: Config = {
       sans: `"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif`,
     },
     fontSize: {
+      xs: "1.3rem",
       sm: "1.4rem",
       md: "1.6rem",
       lg: ["2.2rem", "1.3"],
@@ -20,17 +21,20 @@ const config: Config = {
     colors: {
       white: "#fff",
       background: "#000212",
-      linkHover: "#b4bcd099",
+      gray: "#b4bcd099",
       "brand-bg": "#5e6ad2" 
     },
-    customUtilities: {
-      '.medium': {
-        transition: 'color 0.25s linear'
+    customUtilities: (theme: any) => ({
+      '.transition-medium': {
+        transition: 'all 160ms ease'
       },
       ".header-blur": {
-        backdropFilter: "blur(30px) saturate(120%)"
+        backdropFilter: "blur(3rem) saturate(120%)"
       },
-    },
+      ".text-balance": {
+        "text-wrap": "balance"
+      }
+    }),
     spacing: {
       0: "0",
       1: "0.4rem",
