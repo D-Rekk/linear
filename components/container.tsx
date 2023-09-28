@@ -1,10 +1,8 @@
-import { Children } from "@/app/layout"
+import type { ClassChildren } from "@/app/types"
 import { twMerge } from "tailwind-merge"
 
-type T_Container = Children & {
-  className?: string
-}
-export const Container = ({children, className} : T_Container) => {
+
+export const Container = ({children, className} : ClassChildren) => {
   return (
     <div className={twMerge(className, "max-w-[120rem] mx-auto")}>
       {children}
