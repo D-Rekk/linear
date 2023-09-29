@@ -17,9 +17,15 @@ export default function RootLayout({
 }: Children) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height ,initial-scale=1"
+        />
+      </head>
       <body className={inter.className}>
         <Header />
-        <main className='mt-12'>{children}</main>
+        <main className='pt-12'>{children}</main>
         <Footer />
       </body>
     </html>

@@ -32,8 +32,8 @@ const config: Config = {
         backdropFilter: "blur(3rem) saturate(120%)"
       },
       ".text-balance": {
-        "text-wrap": "balance"
-      }
+        "text-wrap": "balance",
+      },
     }),
     spacing: {
       0: "0",
