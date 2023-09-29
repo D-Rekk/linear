@@ -6,6 +6,12 @@
   html {
     @apply bg-background font-sans text-white;
     font-size: 62.5%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
   }
 }
 

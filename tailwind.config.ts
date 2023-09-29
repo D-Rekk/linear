@@ -22,14 +22,14 @@ const config: Config = {
       white: "#fff",
       background: "#000212",
       gray: "#b4bcd099",
-      "brand-bg": "#5e6ad2" 
+      "brand-bg": "#5e6ad2",
     },
     customUtilities: (theme: any) => ({
-      '.transition-medium': {
-        transition: 'all 160ms ease'
+      ".transition-medium": {
+        transition: "all 160ms ease",
       },
       ".header-blur": {
-        backdropFilter: "blur(3rem) saturate(120%)"
+        backdropFilter: "blur(3rem) saturate(120%)",
       },
       ".text-balance": {
         "text-wrap": "balance",
@@ -49,13 +49,22 @@ const config: Config = {
       10: "4rem",
       11: "4.4rem",
       12: "4.8rem",
+      ham: `calc(100vh - 4.8rem)`,
     },
+    extend:{
+      transitionDuration: {
+      400: "400ms",
+    },
+      transitionTimingFunction: {
+        "out-slow-in": "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+    }
   },
   plugins: [
     plugin(function ({ addBase, addUtilities, addComponents, theme }) {
-      addBase(theme('customBase', {}))
-      addComponents(theme('customComponents', {}))
-      addUtilities(theme('customUtilities', {}))
+      addBase(theme("customBase", {}));
+      addComponents(theme("customComponents", {}));
+      addUtilities(theme("customUtilities", {}));
     }),
   ],
 };
