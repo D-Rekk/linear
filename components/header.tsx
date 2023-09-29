@@ -34,10 +34,10 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <Logo className="w-[1.8rem] h-[1.8rem] mr-2" />Linear
           </Link>
-          <nav className={twMerge(`max-md:h-ham max-md:fixed md:static md:flex top-12 left-0 w-full max:md:transition-opacity max-md:duration-400 max-md:bg-background `, (isOpen ? "max-md:visible max-md:opacity-100": "max-md:invisible max-md:opacity-0"))}>
+          <nav className={twMerge(`max-md:h-ham max-md:fixed md:static md:flex top-12 left-0 w-full ease-out-slow-in duration-400 max:md:transition-opacity max-md:duration-400 max-md:bg-background `, (isOpen ? "max-md:visible max-md:opacity-100 transform-none": "max-md:invisible max-md:opacity-0 translate-y-[10px]"))}>
             <ul className="flex flex-col md:flex-row md:gap-4 md:items-center">
               {navElements.map((element) => (
-                  <li key={element} className={twMerge(`max-md:border-b border-white/10 md:ml-6 text-md md:text-sm h-12 transition-transform duration-400 ease-out-slow-in ${itemsToHide.includes(element) ? "md:max-lg:hidden" : ""}`, (isOpen ? "transform-none" : "max-md:hidden max-md:translate-y-3"))}>
+                  <li key={element} className={twMerge(`max-md:border-b border-white/10 md:ml-6 text-md md:text-sm h-12 ${itemsToHide.includes(element) ? "md:max-lg:hidden" : ""}`)}>
                     <Link href="#" className="hover:text-gray transition-colors inline-flex items-center h-full max-md:px-8">{element}</Link>
                   </li>
               ))}
