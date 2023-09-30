@@ -34,12 +34,21 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <Logo className="w-[1.8rem] h-[1.8rem] mr-2" />Linear
           </Link>
-          <nav className={twMerge(`max-md:h-ham max-md:fixed md:static md:flex top-12 left-0 w-full ease-out-slow-in duration-400 max:md:transition-opacity max-md:duration-400 max-md:bg-background `, (isOpen ? "max-md:visible max-md:opacity-100 transform-none": "max-md:invisible max-md:opacity-0 translate-y-[10px]"))}>
-            <ul className="flex flex-col md:flex-row md:gap-4 md:items-center">
-              {navElements.map((element) => (
-                  <li key={element} className={twMerge(`max-md:border-b border-white/10 md:ml-6 text-md md:text-sm h-12 ${itemsToHide.includes(element) ? "md:max-lg:hidden" : ""}`)}>
-                    <Link href="#" className="hover:text-gray transition-colors inline-flex items-center h-full max-md:px-8">{element}</Link>
+          <nav className={`h-hamstatic max-md:absolute max-md:invisible max-md:pointer-events-none flex top-12 left-0 w-full`}>
+            <ul className="flex md:flex-row gap-4 items-center transition-transform ease-out-slow-in duration-[250ms] delay-[25ms] translate-y-[10px] md:translate-y-0">
+              {navElements.map((element) => ( //desktop
+                  <li key={element} className={twMerge(`ml-6 md:text-sm h-12  ${itemsToHide.includes(element) ? "md:max-lg:invisible max-lg:absolute lg:translate-y-0" : "max-md:absolute md:translate-y-0"}`)}>
+                    <Link href="#" className="hover:text-gray transition-colors inline-flex items-center h-full">{element}</Link>
                   </li>
+              ))}
+            </ul>
+          </nav>
+          <nav className={twMerge(`h-ham fixed top-12 left-0 w-full transition-all ease-out-slow-in duration-400 bg-background md:opacity-0 md:pointer-events-none md:invisible`, (isOpen ? "max-md:visible max-md:opacity-100 max-md:transform-none": "max-md:invisible max-md:opacity-0 translate-y-[10px]"))}>
+            <ul className={twMerge(`flex flex-col md:flex-row md:hidden`)}>
+              {navElements.map((element) => ( //mobile
+                <li key={element} className={`border-b border-white/10 text-md h-12`}>
+                  <Link href="#" className="hover:text-gray transition-colors inline-flex items-center h-full px-8">{element}</Link>
+                </li>
               ))}
             </ul>
           </nav>
