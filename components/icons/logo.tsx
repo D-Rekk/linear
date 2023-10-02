@@ -1,4 +1,8 @@
-export const Logo = ({className}: {className?: string}) => (
+import { HTMLAttributes } from "react"
+
+
+
+export const Logo = ({className}: HTMLAttributes<SVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
