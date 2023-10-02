@@ -22,11 +22,16 @@ const config: Config = {
       white: "#fff",
       background: "#000212",
       gray: "#b4bcd099",
+      hover: "#f7f8f8",
       "brand-bg": "#5e6ad2",
+      secondary: "#b4bcd0",
     },
     customUtilities: (theme: any) => ({
       ".transition-medium": {
         transition: "all 160ms ease",
+      },
+      ".transition-color-hover": {
+        transition: "color 160ms ease",
       },
       ".header-blur": {
         backdropFilter: "blur(3rem) saturate(120%)",
@@ -49,16 +54,20 @@ const config: Config = {
       10: "4rem",
       11: "4.4rem",
       12: "4.8rem",
+      13: "5.6rem",
       ham: `calc(100vh - 4.8rem)`,
     },
-    extend:{
+    extend: {
+      minWidth: {
+        sections: "min(1.8rem, 100%)",
+      },
       transitionDuration: {
-      400: "400ms",
-    },
+        400: "400ms",
+      },
       transitionTimingFunction: {
         "out-slow-in": "cubic-bezier(0.4, 0, 0.2, 1)",
       },
-    }
+    },
   },
   plugins: [
     plugin(function ({ addBase, addUtilities, addComponents, theme }) {
