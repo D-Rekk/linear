@@ -21,7 +21,7 @@ const config: Config = {
     colors: {
       white: "#fff",
       background: "#000212",
-      gray: "#b4bcd099",
+      gray: "#b4bcd0",
       hover: "#f7f8f8",
       "brand-bg": "#5e6ad2",
       secondary: "#b4bcd0",

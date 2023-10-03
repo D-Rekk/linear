@@ -38,7 +38,7 @@ export default function Header() {
             <ul className="flex md:flex-row gap-4 items-center transition-transform ease-out-slow-in duration-[250ms] delay-[25ms] translate-y-[10px] md:translate-y-0">
               {navElements.map((element) => ( //desktop
                   <li key={element} className={twMerge(`ml-6 md:text-sm h-12  ${itemsToHide.includes(element) ? "md:max-lg:invisible max-lg:absolute lg:translate-y-0" : "max-md:absolute md:translate-y-0"}`)}>
-                    <Link href="#" className="hover:text-gray transition-colors inline-flex items-center h-full">{element}</Link>
+                    <Link href="#" className="hover:text-gray/60 transition-colors inline-flex items-center h-full">{element}</Link>
                   </li>
               ))}
             </ul>
@@ -47,7 +47,7 @@ export default function Header() {
             <ul className={twMerge(`flex flex-col md:flex-row md:hidden`)}>
               {navElements.map((element) => ( //mobile
                 <li key={element} className={`border-b border-white/10 text-md h-12`}>
-                  <Link href="#" className="hover:text-gray transition-colors inline-flex items-center h-full px-8">{element}</Link>
+                  <Link href="#" className="hover:text-gray/60 transition-colors inline-flex items-center h-full px-8">{element}</Link>
                 </li>
               ))}
             </ul>
