@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge"
 
 export const Container = ({children, className} : ClassChildren) => {
   return (
-    <div className={twMerge(className, "max-w-[120rem] mx-auto px-8")}>
+    <div className={twMerge(className, "max-w-[126rem] mx-auto px-8")}>
       {children}
     </div>
   )

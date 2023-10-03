@@ -31,7 +31,8 @@ const config: Config = {
         transition: "all 160ms ease",
       },
       ".transition-color-hover": {
-        transition: "color 160ms ease",
+        transition: "160ms ease",
+        transitionProperty: "color, fill"
       },
       ".header-blur": {
         backdropFilter: "blur(3rem) saturate(120%)",
@@ -59,7 +60,7 @@ const config: Config = {
     },
     extend: {
       minWidth: {
-        sections: "min(1.8rem, 100%)",
+        sections: "min(18rem, 100%)",
       },
       transitionDuration: {
         400: "400ms",
