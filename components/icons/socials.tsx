@@ -1,10 +1,10 @@
-import type { HTMLAttributes } from "react"
+type Icon = {
+  className: string
+}
 
-const TwitterIcon = ({className}: HTMLAttributes<SVGElement>) => {
+const TwitterIcon = ({ className }: Icon) => {
   return (
     <svg
-      width="18"
-      height="18"
       viewBox="0 0 16 16"
       fill="currentColor"
       role="img"
@@ -16,11 +16,9 @@ const TwitterIcon = ({className}: HTMLAttributes<SVGElement>) => {
   );
 };
 
-const GithubIcon = ({className}: HTMLAttributes<SVGElement>) => {
+const GithubIcon = ({ className }: Icon) => {
   return (
     <svg
-      width="18"
-      height="18"
       viewBox="0 0 16 16"
       fill="currentColor"
       role="img"
@@ -36,11 +34,9 @@ const GithubIcon = ({className}: HTMLAttributes<SVGElement>) => {
   );
 };
 
-const SlackIcon = ({className}: HTMLAttributes<SVGElement>) => {
+const SlackIcon = ({ className }: Icon) => {
   return (
     <svg
-      width="18"
-      height="18"
       viewBox="0 0 16 16"
       fill="currentColor"
       role="img"
