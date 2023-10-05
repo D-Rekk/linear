@@ -15,6 +15,7 @@ const config: Config = {
       xs: "1.3rem",
       sm: "1.4rem",
       md: "1.6rem",
+      ml: "1.8rem",
       lg: ["2.2rem", "1.3"],
       "xl": "2.4rem",
       "2xl": "2.6rem",
@@ -30,7 +31,6 @@ const config: Config = {
       gray: "#b4bcd0",
       hover: "#f7f8f8",
       "brand-bg": "#5e6ad2",
-      secondary: "#b4bcd0",
     },
     customUtilities: (theme: any) => ({
       ".transition-medium": {
@@ -47,6 +47,9 @@ const config: Config = {
         "text-wrap": "balance",
       },
     }),
+    backgroundImage:{
+      "hero-page": "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)"
+    },
     spacing: {
       0: "0",
       1: "0.4rem",

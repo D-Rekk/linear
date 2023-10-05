@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Header />
-        <main className='pt-12'>{children}</main>
+        <main className="pt-12 -mt-12 bg-hero-page">{children}</main>
         <Footer />
       </body>
     </html>
