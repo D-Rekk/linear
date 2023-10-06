@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Container } from "./container"
 import { Logo } from "./icons/logo"
 import { GithubIcon, SlackIcon, TwitterIcon } from "./icons/socials"
+import { Loader } from "./loader"
 
 
 const list = [
@@ -29,6 +30,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center text-gray/60 hover:text-hover transition-color-hover font-medium">
             <Logo className="w-[1.8rem] h-[1.8rem] mr-2" />Linear - Designed Worldwide
           </Link>
+          <Loader />
           <div className="flex gap-6">
             <Link href={"#"}>
               <TwitterIcon className="w-6 md:w-[1.8rem] fill-gray/60 hover:fill-hover transition-color-hover" />

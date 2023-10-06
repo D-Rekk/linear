@@ -29,6 +29,7 @@ const config: Config = {
       white: "#fff",
       background: "#000212",
       gray: "#b4bcd0",
+      "fixed-gray": "#6C7284",
       hover: "#f7f8f8",
       "brand-bg": "#5e6ad2",
     },
@@ -38,7 +39,7 @@ const config: Config = {
       },
       ".transition-color-hover": {
         transition: "160ms ease",
-        transitionProperty: "color, fill"
+        transitionProperty: "color, fill",
       },
       ".header-blur": {
         backdropFilter: "blur(3rem) saturate(120%)",
@@ -46,9 +47,12 @@ const config: Config = {
       ".text-balance": {
         "text-wrap": "balance",
       },
+      ".bg-linear": {
+        background: "linear-gradient(90deg,transparent 0%, theme(colors.white) 2%, theme(colors.white) 7%, transparent 9%)",
+      },
     }),
-    backgroundImage:{
-      "hero-page": "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)"
+    backgroundImage: {
+      "hero-page": "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
     },
     spacing: {
       0: "0",
@@ -68,6 +72,23 @@ const config: Config = {
       ham: `calc(100vh - 4.8rem)`,
     },
     extend: {
+      animation: {
+        loading: "loading cubic-bezier(0.42, 0, 0.1, 1) 2s infinite",
+      },
+      keyframes: {
+        loading: {
+          "0%": {
+            transform: "translateX(-10%)",
+            opacity: "0",
+          },
+          "40%": {
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+      },
       minWidth: {
         sections: "min(18rem, 100%)",
       },
