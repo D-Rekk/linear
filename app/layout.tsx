@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { Children } from './types'
+import { TailwindIndicator } from '@/components/tailwind-indicator'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Header />
         <main className="pt-12 -mt-12 bg-hero-page">{children}</main>
         <Footer />
+        <TailwindIndicator />
       </body>
     </html>
   )
