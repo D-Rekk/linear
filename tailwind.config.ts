@@ -17,7 +17,7 @@ const config: Config = {
       md: "1.6rem",
       ml: "1.8rem",
       lg: ["2.2rem", "1.3"],
-      "xl": "2.4rem",
+      xl: "2.4rem",
       "2xl": "2.6rem",
       "3xl": "3.2rem",
       "4xl": "4rem",
