@@ -15,7 +15,7 @@ const config: Config = {
       xs: "1.3rem",
       sm: "1.4rem",
       md: "1.6rem",
-      ml: "1.8rem",
+      ml: "1.8rem", //lg and below 1+ scaled
       lg: ["2.2rem", "1.3"],
       xl: "2.4rem",
       "2xl": "2.6rem",
@@ -48,7 +48,18 @@ const config: Config = {
         "text-wrap": "balance",
       },
       ".bg-linear": {
-        background: "linear-gradient(90deg,transparent 0%, theme(colors.white) 2%, theme(colors.white) 7%, transparent 9%)",
+        background:
+          "linear-gradient(90deg, transparent 0%, theme(colors.white) 2%, theme(colors.white) 7%, transparent 9%)",
+      },
+      ".branding": {
+        background:
+          "linear-gradient(90deg, transparent 0%, #fff 2%, #fff 20%, transparent 22%)",
+        backgroundClip: "text",
+        "-webkit-background-clip": "text",
+        backgroundPositionX: "var(--logotype-negative)",
+      },
+      ".animate-pause": {
+        animationPlayState: "paused",
       },
     }),
     backgroundImage: {
@@ -73,7 +84,8 @@ const config: Config = {
     },
     extend: {
       animation: {
-        loading: "loading cubic-bezier(0.42, 0, 0.1, 1) 2s infinite",
+        loading: "loading 2s infinite",
+        logotype: "logotype 2s infinite"
       },
       keyframes: {
         loading: {
@@ -88,6 +100,14 @@ const config: Config = {
             transform: "translateX(100%)",
           },
         },
+        logotype: {
+          "0%": {
+            "background-position-x": "var(--logotype-negative)",
+          },
+          "100%": {
+            "background-position-x": "0%",
+          },
+        },
       },
       minWidth: {
         sections: "min(18rem, 100%)",
@@ -97,6 +117,7 @@ const config: Config = {
       },
       transitionTimingFunction: {
         "out-slow-in": "cubic-bezier(0.4, 0, 0.2, 1)",
+        cubic: "cubic-bezier(0.42, 0, 0.1, 1)",
       },
     },
   },

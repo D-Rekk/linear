@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --logotype-negative: calc(-1 * var(--logotype))
+}
+
 @layer base {
   html {
     @apply bg-background font-sans text-white;
