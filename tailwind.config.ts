@@ -33,6 +33,24 @@ const config: Config = {
       hover: "#f7f8f8",
       "brand-bg": "#5e6ad2",
     },
+    customUtilities: (theme: any) => ({
+      ".transition-medium": {
+        transition: "all 160ms ease",
+      },
+      ".transition-color-hover": {
+        transition: "160ms ease",
+        transitionProperty: "color, fill",
+      },
+      ".header-blur": {
+        backdropFilter: "blur(3rem) saturate(120%)",
+      },
+      ".text-balance": {
+        "text-wrap": "balance",
+      },
+      ".bg-linear": {
+        background: "linear-gradient(90deg,transparent 0%, theme(colors.white) 2%, theme(colors.white) 7%, transparent 9%)",
+      },
+    }),
     backgroundImage: {
       "hero-page": "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
     },
