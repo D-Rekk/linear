@@ -1,8 +1,6 @@
 import Link from "next/link"
 import { Container } from "./container"
-import { Logo } from "./icons/logo"
-import { GithubIcon, SlackIcon, TwitterIcon } from "./icons/socials"
-import { Loader } from "./loader"
+import { FooterBranding } from "./footer-branding"
 
 
 const list = [
@@ -26,23 +24,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/5 text-md md:text-sm ">
       <Container className="flex flex-row flex-wrap py-13 w-full ">
-        <section className="flex flex-row justify-between mr-auto lg:flex-col max-lg:w-full ">
-          <Link href="/" className="flex items-center text-gray/60 hover:text-hover transition-color-hover font-medium">
-            <Logo className="w-[1.8rem] h-[1.8rem] mr-2" />Linear - Designed Worldwide
-          </Link>
-          <Loader />
-          <div className="flex gap-6">
-            <Link href={"#"}>
-              <TwitterIcon className="w-6 md:w-[1.8rem] fill-gray/60 hover:fill-hover transition-color-hover" />
-            </Link>
-            <Link href={"#"}>
-              <GithubIcon className="w-6 md:w-[1.8rem] fill-gray/60 hover:fill-hover transition-color-hover"/>
-            </Link>
-            <Link href={"#"}>
-              <SlackIcon className="w-6 md:w-[1.8rem] fill-gray/60 hover:fill-hover transition-color-hover" />
-            </Link>
-          </div>
-        </section>
+        <FooterBranding />
           {list.map(({ title, contents }, i) => (
             <section key={title + '' + i} className="min-w-[50%] lg:min-w-sections max-lg:mt-10 max-lg:flex-1">
               <h3 className="font-medium mb-4 text-gray">{title}</h3>
