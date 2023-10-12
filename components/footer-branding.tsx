@@ -32,7 +32,7 @@ export function FooterBranding() {
     <section className="flex flex-row justify-between mr-auto lg:flex-col max-lg:w-full ">
       <Link href="/" className="flex items-center text-gray/60 hover:text-hover transition-color-hover font-medium">
         <Logo className="w-[1.8rem] h-[1.8rem] mr-2" />
-        <p ref={textRef} className="max-md:branding lg:branding animate-logotype ease-cubic hover:animate-pause">Linear - Designed Worldwide</p>
+        <p ref={textRef} className="max-md:branding lg:branding background-clip animate-logotype ease-cubic hover:animate-pause">Linear - Designed Worldwide</p>
       </Link>
       <Loader />
       <div className="flex gap-6">

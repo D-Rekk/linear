@@ -52,15 +52,24 @@ const config: Config = {
           "linear-gradient(90deg, transparent 0%, theme(colors.white) 2%, theme(colors.white) 7%, transparent 9%)",
       },
       ".branding": {
-        background:
-          "linear-gradient(90deg, transparent 0%, #fff 2%, #fff 20%, transparent 22%)",
-        backgroundClip: "text",
-        "-webkit-background-clip": "text",
+        background: "linear-gradient(90deg, transparent 0%, #fff 2%, #fff 20%, transparent 22%)",
         backgroundPositionX: "var(--logotype-negative)",
       },
       ".animate-pause": {
         animationPlayState: "paused",
       },
+      ".hero-gradient": {
+        background: `linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38))`,
+        
+      },
+      ".background-clip": {
+        backgroundClip: "text",
+        "-webkit-background-clip": "text !important",
+      },
+      ".transparent":{
+        color: "transparent",
+        "-webkit-text-fill-color": "transparent",
+      }
     }),
     backgroundImage: {
       "hero-page": "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
