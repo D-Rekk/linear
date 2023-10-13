@@ -27,3 +27,30 @@
     filter: brightness(115%)
   }
 }
+
+
+#logotype{
+  background-size: 100% 30rem;
+  background-position: middle;
+  background-image: conic-gradient(from var(--angle) at 50% 50%, theme(colors.gray/60%) 40%, #FFFFFFFF 50%, theme(colors.gray/60%) 60%);
+  animation: animate 3s linear infinite;
+  
+}
+#logotype:hover{
+  animation-play-state: paused;
+}
+
+@keyframes animate {
+  from {
+    --angle: 90deg;
+  }
+  to {
+    --angle: 270deg; /* Animate the angle to 360 degrees */
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}

@@ -51,10 +51,6 @@ const config: Config = {
         background:
           "linear-gradient(90deg, transparent 0%, theme(colors.white) 2%, theme(colors.white) 7%, transparent 9%)",
       },
-      ".branding": {
-        background: "linear-gradient(90deg, transparent 0%, #fff 2%, #fff 20%, transparent 22%)",
-        backgroundPositionX: "var(--logotype-negative)",
-      },
       ".animate-pause": {
         animationPlayState: "paused",
       },
@@ -94,7 +90,6 @@ const config: Config = {
     extend: {
       animation: {
         loading: "loading 2s infinite",
-        logotype: "logotype 2s infinite"
       },
       keyframes: {
         loading: {
@@ -107,14 +102,6 @@ const config: Config = {
           },
           "100%": {
             transform: "translateX(100%)",
-          },
-        },
-        logotype: {
-          "0%": {
-            "background-position-x": "var(--logotype-negative)",
-          },
-          "100%": {
-            "background-position-x": "0%",
           },
         },
       },
