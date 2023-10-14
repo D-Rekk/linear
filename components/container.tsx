@@ -1,10 +1,10 @@
 import type { ClassChildren } from "@/app/types"
-import { twMerge } from "tailwind-merge"
+import { clsx } from "clsx"
 
 
 export const Container = ({children, className} : ClassChildren) => {
   return (
-    <div className={twMerge(className, "max-w-[126rem] mx-auto px-8")}>
+    <div className={clsx(className, "max-w-[126rem] mx-auto px-8")}>
       {children}
     </div>
   )

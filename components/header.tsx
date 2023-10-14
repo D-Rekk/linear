@@ -4,8 +4,7 @@ import { Container } from "./container"
 import { Logo } from "./icons/logo"
 import Button from "./button"
 import HamburgerIcon from "./icons/hamburger"
-import { useEffect, useState } from "react"
-import { twMerge } from "tailwind-merge"
+import { clsx } from "clsx"
 import useResizeWindow from "./hooks/hooks"
 
 const navElements = [
@@ -37,14 +36,14 @@ export default function Header() {
           <nav className={`h-hamstatic max-md:absolute max-md:invisible max-md:pointer-events-none flex top-12 left-0 w-full`}>
             <ul className="flex md:flex-row gap-4 items-center transition-transform ease-out-slow-in duration-[250ms] delay-[25ms] translate-y-[10px] md:translate-y-0">
               {navElements.map((element) => ( //desktop
-                  <li key={element} className={twMerge(`ml-6 text-sm h-12  ${itemsToHide.includes(element) ? "md:max-lg:invisible max-lg:absolute lg:translate-y-0" : "max-md:absolute md:translate-y-0"}`)}>
+                  <li key={element} className={clsx(`ml-6 text-sm h-12  ${itemsToHide.includes(element) ? "md:max-lg:invisible max-lg:absolute lg:translate-y-0" : "max-md:absolute md:translate-y-0"}`)}>
                     <Link href="#" className="hover:text-gray/60 transition-colors inline-flex items-center h-full">{element}</Link>
                   </li>
               ))}
             </ul>
           </nav>
-          <nav className={twMerge(`h-ham fixed top-12 left-0 w-full transition-all ease-out-slow-in duration-400 bg-background md:opacity-0 md:pointer-events-none md:invisible`, (isOpen ? "max-md:visible max-md:opacity-100 max-md:transform-none": "max-md:invisible max-md:opacity-0 translate-y-[10px]"))}>
-            <ul className={twMerge(`flex flex-col text-md md:flex-row md:hidden`)}>
+          <nav className={clsx(`h-ham fixed top-12 left-0 w-full transition-all ease-out-slow-in duration-400 bg-background md:opacity-0 md:pointer-events-none md:invisible`, (isOpen ? "max-md:visible max-md:opacity-100 max-md:transform-none": "max-md:invisible max-md:opacity-0 translate-y-[10px]"))}>
+            <ul className={clsx(`flex flex-col text-md md:flex-row md:hidden`)}>
               {navElements.map((element) => ( //mobile
                 <li key={element} className={`border-b border-white/10 h-12`}>
                   <Link href="#" className="hover:text-gray/60 transition-colors inline-flex items-center h-full px-8">{element}</Link>
