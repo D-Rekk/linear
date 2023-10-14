@@ -65,6 +65,10 @@ const config: Config = {
       ".transparent":{
         color: "transparent",
         "-webkit-text-fill-color": "transparent",
+      },
+      ".logotype":{
+        backgroundSize: "100% 30rem",
+        backgroundImage: "conic-gradient(from var(--angle) at 50% 50%, theme(colors.gray/60%) 40%, #FFFFFFFF 50%, theme(colors.gray/60%) 60%)",
       }
     }),
     backgroundImage: {
@@ -90,6 +94,7 @@ const config: Config = {
     extend: {
       animation: {
         loading: "loading 2s infinite",
+        logotype: "logotype 3s linear infinite"
       },
       keyframes: {
         loading: {
@@ -104,6 +109,14 @@ const config: Config = {
             transform: "translateX(100%)",
           },
         },
+        logotype: {
+          "from": {
+            "--angle": "90deg",
+          },
+          "to": {
+            "--angle": "270deg",
+          }
+        }
       },
       minWidth: {
         sections: "min(18rem, 100%)",
