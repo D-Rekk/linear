@@ -11,7 +11,7 @@ export const HeroTitle = ({ children, className }: ClassChildren) => {
 export const HeroSub = ({ children, className }: ClassChildren) => {
   return (
 
-    <p className={twMerge(className,"text-ml md:text-lg mb-12")}>{children}</p>
+    <p className={`text-gray text-ml md:text-lg mb-12 ${className}`}>{children}</p>
   )
 }
 
