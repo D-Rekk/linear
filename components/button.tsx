@@ -10,8 +10,9 @@ const buttonClasses = cva("rounded-2xl inline-flex items-center transition-mediu
   variants:{
     variant: {
       primary: "bg-primary-gradient",
-      secondary: "",
-      tertiary: ""
+      secondary: 
+      ["font-medium text-off-white bg-white/10 hover:bg-white/20 border border-white/5 backdrop-blur-[12px]",
+      " [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:-mr-1 [&_.icon-wrapper]:pl-2 icon-wrapper-parent"]
     },
     size: {
       small: "text-xs px-3 h-7",
@@ -25,7 +26,11 @@ const buttonClasses = cva("rounded-2xl inline-flex items-center transition-mediu
   }
 })
 
-export default function Button ({children, href, variant, size} :T_Button){
+export function IconWrapper ({children}: Children){
+  return <span className="icon-wrapper">{children}</span>;
+}
+
+export function Button ({children, href, variant, size} :T_Button){
   return(
     <Link className={buttonClasses({variant, size})} href={href}>
       {children}

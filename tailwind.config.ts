@@ -15,7 +15,7 @@ const config: Config = {
       xs: "1.3rem",
       sm: "1.4rem",
       md: "1.6rem",
-      ml: "1.8rem", //lg and below 1+ scaled
+      ml: ["1.8rem", "1.3"], //lg and below 1+ scaled
       lg: ["2.2rem", "1.3"],
       xl: "2.4rem",
       "2xl": "2.6rem",
@@ -27,6 +27,7 @@ const config: Config = {
     },
     colors: {
       white: "#fff",
+      "off-white": "#f7f8f8",
       background: "#000212",
       gray: "#b4bcd0",
       "fixed-gray": "#6C7284",

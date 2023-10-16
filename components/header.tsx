@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { Container } from "./container"
 import { Logo } from "./icons/logo"
-import Button from "./button"
+import { Button } from "./button";
 import HamburgerIcon from "./icons/hamburger"
 import { clsx } from "clsx"
 import useResizeWindow from "./hooks/hooks"

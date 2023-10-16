@@ -41,3 +41,23 @@ a:not(:hover)>#logotype {
 a:hover>#logotype {
   animation-play-state: paused;
 }
+
+.icon-wrapper-parent:hover .icon-wrapper {
+  transition: transform 1s ease;
+  transform: translateX(0px);
+  @apply bounce;
+  animation-fill-mode: backwards; 
+}
+
+.bounce {
+  animation: bounce 2s ease-out infinite;
+  
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(4px)
+  }
+}

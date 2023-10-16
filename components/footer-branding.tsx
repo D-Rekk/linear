@@ -8,7 +8,8 @@ export function FooterBranding() {
     <section className="flex flex-row justify-between mr-auto lg:flex-col max-lg:w-full ">
       <Link href="/" className="flex items-center text-gray/60 hover:text-hover transition-color-hover font-medium">
         <Logo className="w-[1.8rem] h-[1.8rem] mr-2" />
-        <p id="logotype" className="background-clip logotype lg:animate-logotype md:max-lg:animate-none max-md:animate-logotype transition-medium">Linear - Designed Worldwide</p>
+        <p id="logotype" className="background-clip logotype lg:animate-logotype
+        md:max-lg:animate-none max-md:animate-logotype transition-color-hover">Linear - Designed Worldwide</p>
       </Link>
       <Loader />
       <div className="flex gap-6">
