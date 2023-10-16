@@ -1,18 +1,21 @@
 import { Children } from "@/app/types"
 import { cva, VariantProps } from "class-variance-authority"
 import Link from "next/link"
+import { LeftArrow } from "./icons/arrow"
 
 type T_Button = Children & {
   href: string,
+  icon?: boolean,
 } & VariantProps<typeof buttonClasses>
 
-const buttonClasses = cva("rounded-2xl inline-flex items-center transition-medium",{
+const buttonClasses = cva(
+  "rounded-2xl inline-flex items-center transition-medium [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:-mr-1 [&_.icon-wrapper]:pl-2 icon-wrapper-parent",
+  {
   variants:{
     variant: {
       primary: "bg-primary-gradient",
       secondary: 
-      ["font-medium text-off-white bg-white/10 hover:bg-white/20 border border-white/5 backdrop-blur-[12px]",
-      " [&_.icon-wrapper]:rounded-full [&_.icon-wrapper]:-mr-1 [&_.icon-wrapper]:pl-2 icon-wrapper-parent"]
+      ["font-medium text-off-white bg-white/10 hover:bg-white/20 border border-white/5 backdrop-blur-[12px]"]
     },
     size: {
       small: "text-xs px-3 h-7",
@@ -30,10 +33,15 @@ export function IconWrapper ({children}: Children){
   return <span className="icon-wrapper">{children}</span>;
 }
 
-export function Button ({children, href, variant, size} :T_Button){
-  return(
-    <Link className={buttonClasses({variant, size})} href={href}>
+export function Button ({children, href, variant, size, icon = false} :T_Button){
+  return (
+    <Link className={buttonClasses({ variant, size })} href={href}>
       {children}
+      {icon ? (
+        <IconWrapper>
+          <LeftArrow />
+        </IconWrapper>
+      ) : null}
     </Link>
-  )
+  );
 }
