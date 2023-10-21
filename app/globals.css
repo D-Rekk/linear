@@ -53,6 +53,7 @@ a:hover>#logotype {
   animation: bounce 2s ease-out infinite;
   
 }
+
 @keyframes bounce {
   0%, 100% {
     transform: translateX(0px);

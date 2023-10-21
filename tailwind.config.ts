@@ -95,7 +95,8 @@ const config: Config = {
     extend: {
       animation: {
         loading: "loading 2s infinite",
-        logotype: "logotype 3s linear infinite"
+        logotype: "logotype 3s linear infinite",
+        "fade-in": "1000ms ease 0ms 1 normal backwards fade-in"
       },
       keyframes: {
         loading: {
@@ -117,6 +118,16 @@ const config: Config = {
           "to": {
             "--angle": "270deg",
           }
+        },
+        "fade-in": {
+          "from":{
+            opacity: "0",
+            transform: "translateY(-10px)"
+          },
+          "to": {
+            opacity: "1",
+            transform: "translate(0px)"
+          }
         }
       },
       minWidth: {
@@ -132,10 +143,22 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(function ({ addBase, addUtilities, addComponents, theme }) {
+    plugin(function ({ addBase, addUtilities, addComponents, theme, matchUtilities }) {
       addBase(theme("customBase", {}));
       addComponents(theme("customComponents", {}));
       addUtilities(theme("customUtilities", {}));
+      matchUtilities(
+        {
+          "animation-delay": (value) => {
+            return {
+              "animation-delay": value,
+            };
+          },
+        },
+        {
+          values: theme("transitionDelay"),
+        }
+      );
     }),
   ],
 };
