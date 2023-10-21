@@ -2,10 +2,12 @@ import { Children } from "@/app/types"
 import { cva, VariantProps } from "class-variance-authority"
 import Link from "next/link"
 import { LeftArrow } from "./icons/arrow"
+import clsx from "clsx"
 
 type T_Button = Children & {
   href: string,
   icon?: boolean,
+  className?: string
 } & VariantProps<typeof buttonClasses>
 
 const buttonClasses = cva(
@@ -33,9 +35,9 @@ export function IconWrapper ({children}: Children){
   return <span className="icon-wrapper">{children}</span>;
 }
 
-export function Button ({children, href, variant, size, icon = false} :T_Button){
+export function Button ({children, href, variant, size, icon = false, className} :T_Button){
   return (
-    <Link className={buttonClasses({ variant, size })} href={href}>
+    <Link className={clsx(buttonClasses({ variant, size }), className)} href={href}>
       {children}
       {icon ? (
         <IconWrapper>
