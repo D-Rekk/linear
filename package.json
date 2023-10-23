@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-hook/intersection-observer": "^3.1.1",
+    "@react-hook/passive-layout-effect": "^1.2.1",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
