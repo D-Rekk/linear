@@ -63,12 +63,26 @@ a:hover>#logotype {
   }
 }
 
-.hero-image-start {
+.hero-image-wrapper {
   transform: rotateX(25deg);
+  z-index: 2;
 }
 
 .hero-image-animation {
   animation: hero-image 1400ms ease forwards 400ms;
+
+  >.hero-image {
+    transition: opacity 800ms ease 400ms;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  >* {
+    grid-area: 1 / 1 / 1 / 1;
+  }
 }
 
 @keyframes hero-image {
@@ -80,5 +94,35 @@ a:hover>#logotype {
   }
   60%, 100% {
     transform: none;
+  }
+}
+
+.toggle-opacity {
+  opacity: 1;
+}
+
+.glow-base {
+  background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg);
+  filter: blur(160px);
+  transform: translateZ(0px);
+  opacity: 0;
+}
+.glow {
+  animation: glow 4100ms ease-out forwards 600ms;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  100% {
+    opacity: 0.2;
   }
 }
