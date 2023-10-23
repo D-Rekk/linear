@@ -1,6 +1,7 @@
 import { Button } from "@/components/button";
 import { Container } from "@/components/container"
 import { Hero, HeroSub, HeroTitle } from "@/components/hero"
+import { HeroImage } from "@/components/hero-image"
 export default function Homepage() {
   return (
     <div>
@@ -14,7 +15,7 @@ export default function Homepage() {
           </HeroSub>
         </Hero>
         <Button href="#" size={"large"} variant={"primary"} icon className="animate-fade-in animation-delay-[800ms]"> Get started</Button>
-        <img className="mt-[12.8rem]" src="/img/hero.webp" alt={"hero-img"} />
+        <HeroImage />
       </Container>
     </div>
   )
