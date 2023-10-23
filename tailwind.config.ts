@@ -74,6 +74,7 @@ const config: Config = {
     }),
     backgroundImage: {
       "hero-page": "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
+      "hero-gradient": "radial-gradient(ellipse 50% 80% at 20% 40%,rgba(93,52,221,0.1),transparent), radial-gradient(ellipse 50% 80% at 80% 50%,rgba(120,119,198,0.15),transparent)",
     },
     spacing: {
       0: "0",
@@ -96,7 +97,8 @@ const config: Config = {
       animation: {
         loading: "loading 2s infinite",
         logotype: "logotype 3s linear infinite",
-        "fade-in": "1000ms ease 0ms 1 normal backwards fade-in"
+        "fade-in": "1000ms ease 0ms 1 normal backwards fade-in",
+        "hero-image": "hero-image"
       },
       keyframes: {
         loading: {
@@ -128,6 +130,17 @@ const config: Config = {
             opacity: "1",
             transform: "translate(0px)"
           }
+        },
+        "hero-image": {
+          "0%": {
+            transform: "rotateX(25deg)"
+          },
+          "25%": {
+            transform: "rotateX(25deg) scale(0.9)"
+          },
+          "60%, 100%": {
+            transform: "none"
+          }
         }
       },
       minWidth: {
@@ -152,6 +165,11 @@ const config: Config = {
           "animation-delay": (value) => {
             return {
               "animation-delay": value,
+            };
+          },
+          "animation-duration": (value) => {
+            return {
+              "animation-duration": value,
             };
           },
         },

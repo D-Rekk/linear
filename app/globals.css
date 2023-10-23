@@ -62,3 +62,23 @@ a:hover>#logotype {
     transform: translateX(4px)
   }
 }
+
+.hero-image-start {
+  transform: rotateX(25deg);
+}
+
+.hero-image-animation {
+  animation: hero-image 1400ms ease forwards 400ms;
+}
+
+@keyframes hero-image {
+  0% {
+    transform: rotateX(25deg);
+  }
+  25% {
+    transform: rotateX(25deg) scale(0.9);
+  }
+  60%, 100% {
+    transform: none;
+  }
+}
