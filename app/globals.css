@@ -66,6 +66,10 @@ a:hover>#logotype {
 .hero-image-wrapper {
   transform: rotateX(25deg);
   z-index: 2;
+  path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+  }
 }
 
 .hero-image-animation {
@@ -80,7 +84,7 @@ a:hover>#logotype {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  >* {
+  * {
     grid-area: 1 / 1 / 1 / 1;
   }
 }
@@ -124,5 +128,30 @@ a:hover>#logotype {
 
   100% {
     opacity: 0.2;
+  }
+}
+
+.silhouette-base {
+    path {
+    stroke: theme(colors.white/5);
+    stroke-opacity: .2;
+  }
+}
+
+.silhouette {
+  path {
+    animation: silhouette 1200ms ease-out forwards 100ms;
+  }
+}
+
+@keyframes silhouette {
+  from {
+    stroke-dashoffset: 1;
+  }
+  50%, 99% {
+    stroke-dasharray: 0;
+  }
+  100% {
+    visibility: hidden;
   }
 }
