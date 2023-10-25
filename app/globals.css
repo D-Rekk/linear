@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --logotype-negative: calc(-1 * var(--logotype))
+:root {
+  --logotype-negative: calc(-1 * var(--logotype));
 }
 
 @layer base {
@@ -20,11 +20,15 @@
 }
 
 .bg-primary-gradient {
-  background-image: linear-gradient(180deg, theme(colors.brand-bg) -27%, #2831a800),
+  background-image: linear-gradient(
+      180deg,
+      theme(colors.brand-bg) -27%,
+      #2831a800
+    ),
     radial-gradient(rgb(40 53 193) 100%, theme(colors.brand-bg));
   text-shadow: 0.5px -0.5px 3px #ffffff52;
-  &:hover{
-    filter: brightness(115%)
+  &:hover {
+    filter: brightness(115%);
   }
 }
 
@@ -34,11 +38,11 @@
   inherits: false;
 }
 
-a:not(:hover)>#logotype {
-  @apply transparent
+a:not(:hover) > #logotype {
+  @apply transparent;
 }
 
-a:hover>#logotype {
+a:hover > #logotype {
   animation-play-state: paused;
 }
 
@@ -46,26 +50,26 @@ a:hover>#logotype {
   transition: transform 1s ease;
   transform: translateX(0px);
   @apply bounce;
-  animation-fill-mode: backwards; 
+  animation-fill-mode: backwards;
 }
 
 .bounce {
   animation: bounce 2s ease-out infinite;
-  
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(4px)
+    transform: translateX(4px);
   }
 }
 
 .hero-image-wrapper {
   transform: rotateX(25deg);
-  z-index: 2;
+  z-index: 1;
   path {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
@@ -75,8 +79,9 @@ a:hover>#logotype {
 .hero-image-animation {
   animation: hero-image 1400ms ease forwards 400ms;
 
-  >.hero-image {
-    transition: opacity 800ms ease 400ms;
+  > .hero-image {
+    transition: opacity 800ms ease 800ms;
+    z-index: 1;
   }
 }
 
@@ -96,7 +101,8 @@ a:hover>#logotype {
   25% {
     transform: rotateX(25deg) scale(0.9);
   }
-  60%, 100% {
+  60%,
+  100% {
     transform: none;
   }
 }
@@ -106,7 +112,15 @@ a:hover>#logotype {
 }
 
 .glow-base {
-  background: conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg);
+  background: conic-gradient(
+    from 230.29deg at 51.63% 52.16%,
+    rgb(36, 0, 255) 0deg,
+    rgb(0, 135, 255) 67.5deg,
+    rgb(108, 39, 157) 198.75deg,
+    rgb(24, 38, 163) 251.25deg,
+    rgb(54, 103, 196) 301.88deg,
+    rgb(105, 30, 255) 360deg
+  );
   filter: blur(160px);
   transform: translateZ(0px);
   opacity: 0;
@@ -132,15 +146,15 @@ a:hover>#logotype {
 }
 
 .silhouette-base {
-    path {
+  path {
     stroke: theme(colors.white/5);
-    stroke-opacity: .2;
+    stroke-opacity: 0.2;
   }
 }
 
 .silhouette {
   path {
-    animation: silhouette 1200ms ease-out forwards 100ms;
+    animation: silhouette 800ms ease-out forwards 200ms;
   }
 }
 
@@ -148,10 +162,124 @@ a:hover>#logotype {
   from {
     stroke-dashoffset: 1;
   }
-  50%, 99% {
-    stroke-dasharray: 0;
+  50%,
+  99% {
+    stroke-dashoffset: 0;
   }
   100% {
     visibility: hidden;
+  }
+}
+
+.hero-strokes {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.01);
+  background-image: radial-gradient(
+      ellipse 50% 80% at 20% 40%,
+      rgba(93, 52, 221, 0.1),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 50% 80% at 80% 50%,
+      rgba(120, 119, 198, 0.15),
+      transparent
+    );
+  position: relative;
+  border-radius: 0.8rem;
+  opacity: 0.2;
+  animation: opacity forwards;
+
+  &::before {
+    content: "";
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      to bottom,
+      rgba(95, 106, 210, 0.2),
+      transparent
+    );
+    -webkit-mask: linear-gradient(black, black) content-box content-box,
+      linear-gradient(black, black);
+    -webkit-mask-composite: xor;
+  }
+  span {
+    z-index: 1;
+    position: absolute;
+    border-radius: 2px;
+    background: linear-gradient(
+      var(--direction),
+      #9d9bf2 0.43%,
+      #7877c6 14.11%,
+      rgba(120, 119, 198, 0) 62.95%
+    );
+    opacity: 0;
+    /* animation-duration: var(--delay); */
+    &.vertical {
+      right: 0;
+      width: 1px;
+      height: calc(1px * var(--size));
+      --direction: to top;
+      animation: line-vertical var(--duration) ease-in forwards;
+    }
+    &.horizontal {
+      top: 0;
+      height: 1px;
+      width: calc(1px * var(--size));
+      --direction: to left;
+      animation: line-horizontal var(--duration) ease-in forwards;
+    }
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes line-horizontal {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(min(60vw, 90rem));
+  }
+}
+
+@keyframes line-vertical {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(min(34vw, 50rem));
   }
 }
