@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Linear clone (WIP)
+**This is my intent to clone the Linear.app website [(preview here)](https://linear-next-clone.vercel.app/).**
 
-## Getting Started
+**Disclaimer**: This GitHub project is intended to serve as a portfolio project for educational and demonstration purposes. It is crucial to clarify that this project is not aimed at causing any harm or infringing upon the rights of the original [Linear.app](https://linear.app/) product or its associated entities. If there are concerns or objections regarding this project or its content, please do not hesitate to contact me.
 
-First, run the development server:
+<img width="500px" alt="https://github.com/D-Rekk/linear/assets/46907875/692ce28c-b5bc-4e37-8066-21d0bc12ec31" src="https://github.com/D-Rekk/linear/assets/46907875/692ce28c-b5bc-4e37-8066-21d0bc12ec31">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tech Stack
+- NextJS 13 with TypeScript
+- React Hooks (intersection-observer, passive-layout-effect)
+- PostCSS, TailwindCSS with Class Variance Authority (cva) and clsx
+- Animations using IntersectionObserver API and vanilla CSS 
+### Performance results using [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-linear-next-clone-vercel-app/7xbcm8wcxq?form_factor=desktop)
+<img width="500px" alt="Screenshot 2023-10-25 alle 15 32 35" src="https://github.com/D-Rekk/linear/assets/46907875/2a2dd7b9-fa2f-46f3-8e1c-3050355db79a">
