@@ -283,3 +283,13 @@ a:hover > #logotype {
     transform: translateY(min(34vw, 50rem));
   }
 }
+
+.sponsors {
+  display: grid;
+  grid: auto / repeat(var(--columns),minmax(0,1fr));
+  place-items: center;
+  row-gap: var(--row-gap);
+  column-gap: var(--column-gap);
+  --row-gap: 3.2rem;
+  --column-gap: 2.4rem;
+}

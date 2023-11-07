@@ -2,6 +2,7 @@ import { Button } from "@/components/button";
 import { Container } from "@/components/container"
 import { Hero, HeroSub, HeroTitle } from "@/components/hero"
 import { HeroImage } from "@/components/hero-image"
+import { Sponsors } from "@/components/sponsors"
 export default function Homepage() {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function Homepage() {
         </Hero>
         <Button href="#" size={"large"} variant={"primary"} icon className="animate-fade-in animation-delay-[800ms]"> Get started</Button>
         <HeroImage />
+        <Sponsors/>
       </Container>
     </div>
   )
