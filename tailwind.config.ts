@@ -98,7 +98,9 @@ const config: Config = {
         loading: "loading 2s infinite",
         logotype: "logotype 3s linear infinite",
         "fade-in": "1000ms ease 0ms 1 normal backwards fade-in",
-        "hero-image": "hero-image"
+        "hero-image": "hero-image",
+        "glow-line-horizontal": "glow-line-horizontal var(--animation-duration) ease-in forwards",
+        "glow-line-vertical": "glow-line-vertical var(--animation-duration) ease-in forwards",
       },
       keyframes: {
         loading: {
