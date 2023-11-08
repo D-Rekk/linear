@@ -64,7 +64,7 @@ export function HeroImage() {
   }, [isIntersecting, isStrictInterecting]);
 
   return (
-    <section className="hero [perspective:200rem] mt-[12.8rem]">
+    <section className="hero [perspective:200rem] mt-[12.8rem] pb-[25.6rem] -mb-[16.4rem]">
       <div className={clsx("glow-base",
       isVisible ? "glow" : "")} />
       <div
