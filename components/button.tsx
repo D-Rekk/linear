@@ -1,7 +1,7 @@
 import { Children } from "@/app/types"
 import { cva, VariantProps } from "class-variance-authority"
 import Link from "next/link"
-import { LeftArrow } from "./icons/arrow"
+import { LeftArrow } from "./icons/illustrations"
 import clsx from "clsx"
 
 type T_Button = Children & {
