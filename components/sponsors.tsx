@@ -1,4 +1,6 @@
+import clsx from "clsx"
 import { Ramp, Loom, Vercel, Descript, Cashapp, Supercell, Mercury, Retool, Remote, Arc, Raycast, Runaway } from "./icons/brand-logos"
+import { Stardust } from "./icons/illustrations"
 
 
 export const Sponsors = () => {
@@ -21,6 +23,11 @@ export const Sponsors = () => {
         <Arc />
         <Raycast />
         <Runaway />
+      </div>
+      <div className={clsx(
+        "stardust h-[60rem] my-[-12.8] overflow-hidden"
+      )}>
+        <Stardust/>
       </div>
     </div>
   );
