@@ -25,7 +25,7 @@ export const Sponsors = () => {
         <Runaway />
       </div>
       <div className={clsx(
-        "stardust h-[60rem] my-[-12.8] overflow-hidden"
+        "stardust h-[60rem] my-[-12.8rem] overflow-hidden"
       )}>
         <Stardust/>
       </div>

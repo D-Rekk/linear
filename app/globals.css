@@ -6,6 +6,17 @@
   --logotype-negative: calc(-1 * var(--logotype));
 }
 
+::-moz-selection {
+  color: #fff;
+  background: #4f52b4;
+}
+
+::selection {
+  background: #4f52b4;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
 @layer base {
   html {
     @apply bg-background font-sans text-white;
@@ -321,5 +332,26 @@ a:hover > #logotype {
     border-radius: 50%;
     border-top: 1px solid rgba(120, 118, 197, 0.4);
     top: 50%;
+  }
+}
+
+.cards {
+  --gap: 2.4rem;
+  --row: minmax(0,1fr);
+  padding: 0 3.2rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: [page-start] var(--row) [prose-start] var(--row) var(--row) var(--row) var(--row) [prose-end] var(--row) [page-end];
+  grid-gap: var(--gap);
+  & section {
+    border-radius: 6.4rem;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    & h3 {
+      @apply text-lg
+    }
+    & p {
+      @apply text-md
+    }
   }
 }
