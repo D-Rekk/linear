@@ -33,8 +33,8 @@ export function HeroImage() {
         setLines((lines) => [
           ...lines,
           {
-            direction: Math.random() > 0.75 ? "horizontal" : "vertical",
-            duration: randomNumberBetween(200, 600),
+            direction: Math.random() < 0.75 ? "horizontal" : "vertical",
+            duration: randomNumberBetween(800, 1200),
             size: randomNumberBetween(60, 160),
             id: Math.random().toString(36).substring(7),
           },
@@ -79,7 +79,7 @@ export function HeroImage() {
           {lines.map((line) => (
             <span key={line.id} onAnimationEnd={() => removeLine(line.id)}
               style={{
-                "--duration": line.direction == "vertical" ? (Math.round(line.duration/0.5625)+"ms") : line.duration+"ms",
+                "--duration": line.direction == "vertical" ? (Math.round(line.duration * 0.5625)+"ms") : line.duration+"ms",
                 "--size": line.size } as CSSProperties
               }
               className={line.direction} />
@@ -88,7 +88,7 @@ export function HeroImage() {
         <ImageOutLine className={clsx("silhouette-base w-full h-full", isVisible ? "silhouette" : "")} />
         <img
           className={clsx(
-            "opacity-0 hero-image border border-white/5",
+            "opacity-0 hero-image border rounded-lg border-white/5",
             isVisible ? "toggle-opacity" : ""
           )}
           src="/img/hero.webp"

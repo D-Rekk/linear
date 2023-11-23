@@ -1132,7 +1132,7 @@ export function Stardust({ className }: Icon) {
 export function LogoStencil({ className }: Icon) {
   return (
     <svg viewBox="0 0 557 557" width="557" height="557" fill="none" className={className}>
-      <g stroke-width="18" filter="url(#filter0_f_1706_102555)" opacity="0.4">
+      <g strokeWidth="18" filter="url(#filter0_f_1706_102555)" opacity="0.4">
         <path
           stroke="url(#paint0_linear_1706_102555)"
           d="M113.68 319.368c-.932-3.783 3.561-6.164 6.316-3.409l121.045 121.045c2.755 2.755.374 7.248-3.409 6.316-60.948-15.028-108.924-63.004-123.952-123.952z"
@@ -1150,7 +1150,7 @@ export function LogoStencil({ className }: Icon) {
           d="M152.384 170.657c-1.48-1.48-1.572-3.855-.173-5.412C183.262 130.715 228.284 109 278.377 109 372.057 109 448 184.943 448 278.623c0 50.093-21.715 95.115-56.245 126.166-1.557 1.399-3.931 1.307-5.412-.173L152.384 170.657z"
         ></path>
       </g>
-      <g stroke-opacity="0.2" stroke-width="2" opacity="0.4">
+      <g strokeOpacity="0.2" strokeWidth="2" opacity="0.4">
         <path
           stroke="url(#paint4_linear_1706_102555)"
           d="M113.68 319.368c-.932-3.783 3.561-6.164 6.316-3.409l121.045 121.045c2.755 2.755.374 7.248-3.409 6.316-60.948-15.028-108.924-63.004-123.952-123.952z"
@@ -1170,26 +1170,26 @@ export function LogoStencil({ className }: Icon) {
       </g>
       <path
         stroke="url(#paint8_linear_1706_102555)"
-        stroke-opacity="0.2"
-        stroke-width="8"
+        strokeOpacity="0.2"
+        strokeWidth="8"
         d="M113.68 319.368c-.932-3.783 3.561-6.164 6.316-3.409l121.045 121.045c2.755 2.755.374 7.248-3.409 6.316-60.948-15.028-108.924-63.004-123.952-123.952z"
       ></path>
       <path
         stroke="url(#paint9_linear_1706_102555)"
-        stroke-opacity="0.2"
-        stroke-width="8"
+        strokeOpacity="0.2"
+        strokeWidth="8"
         d="M109.104 267.645a3.947 3.947 0 001.157 3.041l176.053 176.053a3.947 3.947 0 003.041 1.157 169.91 169.91 0 0022.262-2.906c3.061-.608 4.124-4.362 1.917-6.569L118.579 243.466c-2.207-2.207-5.961-1.144-6.569 1.917a169.91 169.91 0 00-2.906 22.262z"
       ></path>
       <path
         stroke="url(#paint10_linear_1706_102555)"
-        stroke-opacity="0.2"
-        stroke-width="8"
+        strokeOpacity="0.2"
+        strokeWidth="8"
         d="M123.521 209.3a3.94 3.94 0 00.828 4.397l218.954 218.955a3.942 3.942 0 004.397.827 168.862 168.862 0 0016.539-8.539c2.214-1.302 2.554-4.336.738-6.152L138.212 192.023c-1.816-1.816-4.85-1.476-6.152.738a169.081 169.081 0 00-8.539 16.539z"
       ></path>
       <path
         stroke="url(#paint11_linear_1706_102555)"
-        stroke-opacity="0.2"
-        stroke-width="8"
+        strokeOpacity="0.2"
+        strokeWidth="8"
         d="M152.384 170.657c-1.48-1.48-1.572-3.855-.173-5.412C183.262 130.715 228.284 109 278.377 109 372.057 109 448 184.943 448 278.623c0 50.093-21.715 95.115-56.245 126.166-1.557 1.399-3.931 1.307-5.412-.173L152.384 170.657z"
       ></path>
       <path
@@ -1217,8 +1217,8 @@ export function LogoStencil({ className }: Icon) {
           y2="340"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint1_linear_1706_102555"
@@ -1228,8 +1228,8 @@ export function LogoStencil({ className }: Icon) {
           y2="340"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint2_linear_1706_102555"
@@ -1239,8 +1239,8 @@ export function LogoStencil({ className }: Icon) {
           y2="340"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint3_linear_1706_102555"
@@ -1250,8 +1250,8 @@ export function LogoStencil({ className }: Icon) {
           y2="340"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint4_linear_1706_102555"
@@ -1261,8 +1261,8 @@ export function LogoStencil({ className }: Icon) {
           y2="299"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint5_linear_1706_102555"
@@ -1272,8 +1272,8 @@ export function LogoStencil({ className }: Icon) {
           y2="299"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint6_linear_1706_102555"
@@ -1283,8 +1283,8 @@ export function LogoStencil({ className }: Icon) {
           y2="299"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint7_linear_1706_102555"
@@ -1294,8 +1294,8 @@ export function LogoStencil({ className }: Icon) {
           y2="299"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6663F6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="0"></stop>
+          <stop stopColor="#6663F6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint8_linear_1706_102555"
@@ -1305,8 +1305,8 @@ export function LogoStencil({ className }: Icon) {
           y2="350.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7877C6"></stop>
-          <stop offset="1" stop-color="#7877C6" stop-opacity="0"></stop>
+          <stop stopColor="#7877C6"></stop>
+          <stop offset="1" stopColor="#7877C6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint9_linear_1706_102555"
@@ -1316,8 +1316,8 @@ export function LogoStencil({ className }: Icon) {
           y2="350.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7877C6"></stop>
-          <stop offset="1" stop-color="#7877C6" stop-opacity="0"></stop>
+          <stop stopColor="#7877C6"></stop>
+          <stop offset="1" stopColor="#7877C6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint10_linear_1706_102555"
@@ -1327,8 +1327,8 @@ export function LogoStencil({ className }: Icon) {
           y2="350.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7877C6"></stop>
-          <stop offset="1" stop-color="#7877C6" stop-opacity="0"></stop>
+          <stop stopColor="#7877C6"></stop>
+          <stop offset="1" stopColor="#7877C6" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint11_linear_1706_102555"
@@ -1338,8 +1338,8 @@ export function LogoStencil({ className }: Icon) {
           y2="350.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7877C6"></stop>
-          <stop offset="1" stop-color="#7877C6" stop-opacity="0"></stop>
+          <stop stopColor="#7877C6"></stop>
+          <stop offset="1" stopColor="#7877C6" stopOpacity="0"></stop>
         </linearGradient>
         <radialGradient
           id="paint12_radial_1706_102555"
@@ -1349,8 +1349,8 @@ export function LogoStencil({ className }: Icon) {
           gradientTransform="rotate(90 67.03 211.47) scale(233.062)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff"></stop>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          <stop stopColor="#fff"></stop>
+          <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint13_radial_1706_102555"
@@ -1360,8 +1360,8 @@ export function LogoStencil({ className }: Icon) {
           gradientTransform="rotate(90 67.03 211.47) scale(233.062)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff"></stop>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          <stop stopColor="#fff"></stop>
+          <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint14_radial_1706_102555"
@@ -1371,8 +1371,8 @@ export function LogoStencil({ className }: Icon) {
           gradientTransform="rotate(90 67.03 211.47) scale(233.062)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff"></stop>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          <stop stopColor="#fff"></stop>
+          <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint15_radial_1706_102555"
@@ -1382,8 +1382,8 @@ export function LogoStencil({ className }: Icon) {
           gradientTransform="rotate(90 67.03 211.47) scale(233.062)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff"></stop>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          <stop stopColor="#fff"></stop>
+          <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
         </radialGradient>
         <filter
           id="filter0_f_1706_102555"
@@ -1391,7 +1391,7 @@ export function LogoStencil({ className }: Icon) {
           height="556.904"
           x="0.094"
           y="0"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
@@ -1419,7 +1419,7 @@ export function Lightning({ className }: Icon) {
       fill="none"
       className={className}
     >
-      <g stroke-width="18" filter="url(#filter0_f_1706_102550)" opacity="0.4">
+      <g strokeWidth="18" filter="url(#filter0_f_1706_102550)" opacity="0.4">
         <path
           stroke="url(#bolt-stroke)"
           d="M223.031 111.534a2.535 2.535 0 012.534-2.534h8.869a2.535 2.535 0 110 5.068h-8.869a2.534 2.534 0 01-2.534-2.534z"
@@ -1541,7 +1541,7 @@ export function Lightning({ className }: Icon) {
           d="M120.403 273.712c0-1.4 1.135-2.534 2.534-2.534h183.717a2.533 2.533 0 110 5.068H122.937a2.535 2.535 0 01-2.534-2.534z"
         ></path>
       </g>
-      <g stroke-opacity="0.2" stroke-width="2" opacity="0.4">
+      <g strokeOpacity="0.2" strokeWidth="2" opacity="0.4">
         <path
           stroke="url(#bolt-stroke)"
           d="M223.031 111.534a2.535 2.535 0 012.534-2.534h8.869a2.535 2.535 0 110 5.068h-8.869a2.534 2.534 0 01-2.534-2.534z"
@@ -1666,182 +1666,182 @@ export function Lightning({ className }: Icon) {
       <g>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M223.031 111.534a2.535 2.535 0 012.534-2.534h8.869a2.535 2.535 0 110 5.068h-8.869a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M201.492 405.481c0 1.4-1.134 2.535-2.534 2.535h-8.869a2.534 2.534 0 010-5.069h8.869c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M211.628 121.67a2.535 2.535 0 012.534-2.534h30.409a2.535 2.535 0 010 5.068h-30.409a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M212.895 395.345c0 1.4-1.134 2.534-2.534 2.534h-30.408a2.533 2.533 0 110-5.068h30.408c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M204.026 131.806a2.535 2.535 0 012.534-2.534h38.011a2.535 2.535 0 010 5.068H206.56a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M220.497 385.209c0 1.4-1.134 2.534-2.534 2.534h-38.01a2.533 2.533 0 110-5.068h38.01c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M196.424 141.942a2.535 2.535 0 012.534-2.534h45.613a2.535 2.535 0 010 5.068h-45.613a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M228.099 375.073c0 1.4-1.134 2.534-2.534 2.534h-45.612a2.533 2.533 0 110-5.068h45.612c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M188.822 152.079c0-1.4 1.134-2.535 2.534-2.535h53.215a2.535 2.535 0 010 5.069h-53.215a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M235.702 364.937c0 1.4-1.135 2.534-2.535 2.534h-53.214a2.533 2.533 0 110-5.068h53.214c1.4 0 2.535 1.135 2.535 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M181.22 162.215c0-1.4 1.134-2.534 2.534-2.534h60.817a2.534 2.534 0 110 5.068h-60.817a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M243.304 354.801a2.535 2.535 0 01-2.534 2.534h-60.817a2.534 2.534 0 110-5.068h60.817a2.534 2.534 0 012.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M172.351 172.351c0-1.4 1.134-2.534 2.534-2.534h69.686a2.534 2.534 0 110 5.068h-69.686a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M252.173 344.665a2.535 2.535 0 01-2.534 2.534h-69.686a2.534 2.534 0 110-5.068h69.686a2.534 2.534 0 012.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M164.749 182.487c0-1.4 1.134-2.534 2.534-2.534h77.288a2.534 2.534 0 110 5.068h-77.288a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M259.775 334.529a2.535 2.535 0 01-2.534 2.534h-77.288a2.534 2.534 0 110-5.068h77.288a2.534 2.534 0 012.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M157.147 192.623c0-1.4 1.134-2.534 2.534-2.534h84.89a2.534 2.534 0 110 5.068h-84.89a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M267.377 324.393a2.535 2.535 0 01-2.534 2.534h-84.89a2.534 2.534 0 110-5.069h84.89a2.535 2.535 0 012.534 2.535z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M149.544 202.759a2.535 2.535 0 012.535-2.534h92.492a2.535 2.535 0 010 5.068h-92.492a2.534 2.534 0 01-2.535-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M274.979 314.256c0 1.4-1.135 2.534-2.534 2.534h-92.492a2.533 2.533 0 110-5.068h92.492a2.535 2.535 0 012.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M141.942 212.895a2.535 2.535 0 012.534-2.534h100.095a2.535 2.535 0 010 5.068H144.476a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M282.581 304.12c0 1.4-1.134 2.534-2.534 2.534H179.953a2.533 2.533 0 110-5.068h100.094c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M134.34 223.031a2.535 2.535 0 012.534-2.534h107.697a2.535 2.535 0 010 5.068H136.874a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M290.183 293.984c0 1.4-1.134 2.534-2.534 2.534H179.953a2.533 2.533 0 110-5.068h107.696c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M126.738 233.167a2.535 2.535 0 012.534-2.534h115.299a2.535 2.535 0 010 5.069H129.272a2.535 2.535 0 01-2.534-2.535z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M297.785 283.848c0 1.4-1.134 2.534-2.534 2.534H179.953a2.533 2.533 0 110-5.068h115.298c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M119.136 243.304c0-1.4 1.135-2.534 2.534-2.534h190.052a2.533 2.533 0 110 5.068H121.67a2.535 2.535 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M111.534 253.44c0-1.4 1.135-2.534 2.534-2.534h198.921a2.533 2.533 0 110 5.068H114.068a2.535 2.535 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M109 263.576c0-1.4 1.135-2.534 2.534-2.534h195.12a2.533 2.533 0 110 5.068h-195.12a2.535 2.535 0 01-2.534-2.534z"
         ></path>
         <path
           stroke="url(#bolt-stroke)"
-          stroke-opacity="0.2"
-          stroke-width="8"
+          strokeOpacity="0.2"
+          strokeWidth="8"
           d="M120.403 273.712c0-1.4 1.135-2.534 2.534-2.534h183.717a2.533 2.533 0 110 5.068H122.937a2.535 2.535 0 01-2.534-2.534z"
         ></path>
       </g>
@@ -1969,8 +1969,8 @@ export function Lightning({ className }: Icon) {
       </g>
       <defs>
         <linearGradient id="bolt-stroke" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#7877C6"></stop>
-          <stop offset="1" stop-color="#6663F6" stop-opacity="1"></stop>
+          <stop offset="0" stopColor="#7877C6"></stop>
+          <stop offset="1" stopColor="#6663F6" stopOpacity="1"></stop>
         </linearGradient>
         <radialGradient
           id="bolt-radial"
@@ -1980,8 +1980,8 @@ export function Lightning({ className }: Icon) {
           gradientTransform="rotate(90 36 176.262) scale(288.739 199.426)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff"></stop>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          <stop stopColor="#fff"></stop>
+          <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
         </radialGradient>
         <filter
           id="filter0_f_1706_102550"
@@ -1989,7 +1989,7 @@ export function Lightning({ className }: Icon) {
           height="517.016"
           x="0"
           y="0"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
@@ -2015,7 +2015,7 @@ export function Keyboard({ className }: Icon) {
         width="708.683"
         height="227"
         fill="#838383"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
         rx="12"
       ></rect>
       <g data-key="pageup">
@@ -2025,7 +2025,7 @@ export function Keyboard({ className }: Icon) {
           x="660.695"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2038,8 +2038,8 @@ export function Keyboard({ className }: Icon) {
           x="660.945"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2050,7 +2050,7 @@ export function Keyboard({ className }: Icon) {
           x="660.695"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2063,8 +2063,8 @@ export function Keyboard({ className }: Icon) {
           x="660.945"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2075,7 +2075,7 @@ export function Keyboard({ className }: Icon) {
           x="551.812"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2088,8 +2088,8 @@ export function Keyboard({ className }: Icon) {
           x="552.062"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2100,7 +2100,7 @@ export function Keyboard({ className }: Icon) {
           x="591.492"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2113,8 +2113,8 @@ export function Keyboard({ className }: Icon) {
           x="591.742"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2125,7 +2125,7 @@ export function Keyboard({ className }: Icon) {
           x="565"
           y="9"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2138,8 +2138,8 @@ export function Keyboard({ className }: Icon) {
           x="565.25"
           y="9.25"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2150,7 +2150,7 @@ export function Keyboard({ className }: Icon) {
           x="549.047"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2163,8 +2163,8 @@ export function Keyboard({ className }: Icon) {
           x="549.297"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2175,7 +2175,7 @@ export function Keyboard({ className }: Icon) {
           x="509.367"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2188,8 +2188,8 @@ export function Keyboard({ className }: Icon) {
           x="509.617"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2200,7 +2200,7 @@ export function Keyboard({ className }: Icon) {
           x="485.375"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2213,8 +2213,8 @@ export function Keyboard({ className }: Icon) {
           x="485.625"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2225,7 +2225,7 @@ export function Keyboard({ className }: Icon) {
           x="442.922"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2238,8 +2238,8 @@ export function Keyboard({ className }: Icon) {
           x="443.172"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2250,7 +2250,7 @@ export function Keyboard({ className }: Icon) {
           x="400.477"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2263,8 +2263,8 @@ export function Keyboard({ className }: Icon) {
           x="400.727"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2275,7 +2275,7 @@ export function Keyboard({ className }: Icon) {
           x="466.914"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2288,8 +2288,8 @@ export function Keyboard({ className }: Icon) {
           x="467.164"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2300,7 +2300,7 @@ export function Keyboard({ className }: Icon) {
           x="424.469"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2313,8 +2313,8 @@ export function Keyboard({ className }: Icon) {
           x="424.719"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2325,7 +2325,7 @@ export function Keyboard({ className }: Icon) {
           x="358.031"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2338,8 +2338,8 @@ export function Keyboard({ className }: Icon) {
           x="358.281"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2350,7 +2350,7 @@ export function Keyboard({ className }: Icon) {
           x="315.586"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2363,8 +2363,8 @@ export function Keyboard({ className }: Icon) {
           x="315.836"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2375,7 +2375,7 @@ export function Keyboard({ className }: Icon) {
           x="273.141"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2388,8 +2388,8 @@ export function Keyboard({ className }: Icon) {
           x="273.391"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2400,7 +2400,7 @@ export function Keyboard({ className }: Icon) {
           x="230.688"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2413,8 +2413,8 @@ export function Keyboard({ className }: Icon) {
           x="230.938"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2425,7 +2425,7 @@ export function Keyboard({ className }: Icon) {
           x="188.242"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2438,8 +2438,8 @@ export function Keyboard({ className }: Icon) {
           x="188.492"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2450,7 +2450,7 @@ export function Keyboard({ className }: Icon) {
           x="145.797"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2463,8 +2463,8 @@ export function Keyboard({ className }: Icon) {
           x="146.047"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2475,7 +2475,7 @@ export function Keyboard({ className }: Icon) {
           x="103.352"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2488,8 +2488,8 @@ export function Keyboard({ className }: Icon) {
           x="103.602"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2500,7 +2500,7 @@ export function Keyboard({ className }: Icon) {
           x="9.227"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2513,8 +2513,8 @@ export function Keyboard({ className }: Icon) {
           x="9.477"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2525,7 +2525,7 @@ export function Keyboard({ className }: Icon) {
           x="382.023"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2538,8 +2538,8 @@ export function Keyboard({ className }: Icon) {
           x="382.273"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2550,7 +2550,7 @@ export function Keyboard({ className }: Icon) {
           x="339.578"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2563,8 +2563,8 @@ export function Keyboard({ className }: Icon) {
           x="339.828"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2575,7 +2575,7 @@ export function Keyboard({ className }: Icon) {
           x="297.133"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2588,8 +2588,8 @@ export function Keyboard({ className }: Icon) {
           x="297.383"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2600,7 +2600,7 @@ export function Keyboard({ className }: Icon) {
           x="254.68"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2613,8 +2613,8 @@ export function Keyboard({ className }: Icon) {
           x="254.93"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2625,7 +2625,7 @@ export function Keyboard({ className }: Icon) {
           x="212.234"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2638,8 +2638,8 @@ export function Keyboard({ className }: Icon) {
           x="212.484"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2650,7 +2650,7 @@ export function Keyboard({ className }: Icon) {
           x="169.789"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2663,8 +2663,8 @@ export function Keyboard({ className }: Icon) {
           x="170.039"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2675,7 +2675,7 @@ export function Keyboard({ className }: Icon) {
           x="127.344"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2688,8 +2688,8 @@ export function Keyboard({ className }: Icon) {
           x="127.594"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2700,7 +2700,7 @@ export function Keyboard({ className }: Icon) {
           x="84.891"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2713,8 +2713,8 @@ export function Keyboard({ className }: Icon) {
           x="85.141"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2725,7 +2725,7 @@ export function Keyboard({ className }: Icon) {
           x="9.227"
           y="94.122"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2738,8 +2738,8 @@ export function Keyboard({ className }: Icon) {
           x="9.477"
           y="94.372"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2750,7 +2750,7 @@ export function Keyboard({ className }: Icon) {
           x="506.594"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2763,8 +2763,8 @@ export function Keyboard({ className }: Icon) {
           x="506.844"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2775,7 +2775,7 @@ export function Keyboard({ className }: Icon) {
           x="464.148"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2788,8 +2788,8 @@ export function Keyboard({ className }: Icon) {
           x="464.398"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2800,7 +2800,7 @@ export function Keyboard({ className }: Icon) {
           x="421.703"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2813,8 +2813,8 @@ export function Keyboard({ className }: Icon) {
           x="421.953"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2825,7 +2825,7 @@ export function Keyboard({ className }: Icon) {
           x="379.258"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path fill="#fff" d="M399.727 68.803v6.486h-.786v-6.486h.786z"></path>
@@ -2835,8 +2835,8 @@ export function Keyboard({ className }: Icon) {
           x="379.508"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2847,7 +2847,7 @@ export function Keyboard({ className }: Icon) {
           x="336.805"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2860,8 +2860,8 @@ export function Keyboard({ className }: Icon) {
           x="337.055"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2872,7 +2872,7 @@ export function Keyboard({ className }: Icon) {
           x="294.359"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2885,8 +2885,8 @@ export function Keyboard({ className }: Icon) {
           x="294.609"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2897,7 +2897,7 @@ export function Keyboard({ className }: Icon) {
           x="251.914"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2910,8 +2910,8 @@ export function Keyboard({ className }: Icon) {
           x="252.164"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2922,7 +2922,7 @@ export function Keyboard({ className }: Icon) {
           x="209.469"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2935,8 +2935,8 @@ export function Keyboard({ className }: Icon) {
           x="209.719"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2947,7 +2947,7 @@ export function Keyboard({ className }: Icon) {
           x="167.016"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2960,8 +2960,8 @@ export function Keyboard({ className }: Icon) {
           x="167.266"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2972,7 +2972,7 @@ export function Keyboard({ className }: Icon) {
           x="124.57"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -2985,8 +2985,8 @@ export function Keyboard({ className }: Icon) {
           x="124.82"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -2997,7 +2997,7 @@ export function Keyboard({ className }: Icon) {
           x="82.125"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3010,8 +3010,8 @@ export function Keyboard({ className }: Icon) {
           x="82.375"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3022,7 +3022,7 @@ export function Keyboard({ className }: Icon) {
           x="9.227"
           y="51.675"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3035,8 +3035,8 @@ export function Keyboard({ className }: Icon) {
           x="9.477"
           y="51.925"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3047,7 +3047,7 @@ export function Keyboard({ className }: Icon) {
           x="9.227"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3060,8 +3060,8 @@ export function Keyboard({ className }: Icon) {
           x="9.477"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3072,7 +3072,7 @@ export function Keyboard({ className }: Icon) {
           x="51.984"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3085,8 +3085,8 @@ export function Keyboard({ className }: Icon) {
           x="52.234"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3097,7 +3097,7 @@ export function Keyboard({ className }: Icon) {
           x="94.742"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3110,8 +3110,8 @@ export function Keyboard({ className }: Icon) {
           x="94.992"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3122,7 +3122,7 @@ export function Keyboard({ className }: Icon) {
           x="137.492"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3135,8 +3135,8 @@ export function Keyboard({ className }: Icon) {
           x="137.742"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3147,7 +3147,7 @@ export function Keyboard({ className }: Icon) {
           x="180.25"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3160,8 +3160,8 @@ export function Keyboard({ className }: Icon) {
           x="180.5"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3172,7 +3172,7 @@ export function Keyboard({ className }: Icon) {
           x="223.008"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3185,8 +3185,8 @@ export function Keyboard({ className }: Icon) {
           x="223.258"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3197,7 +3197,7 @@ export function Keyboard({ className }: Icon) {
           x="265.766"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3210,8 +3210,8 @@ export function Keyboard({ className }: Icon) {
           x="266.016"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3222,7 +3222,7 @@ export function Keyboard({ className }: Icon) {
           x="308.516"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3235,8 +3235,8 @@ export function Keyboard({ className }: Icon) {
           x="308.766"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3247,7 +3247,7 @@ export function Keyboard({ className }: Icon) {
           x="351.273"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3260,8 +3260,8 @@ export function Keyboard({ className }: Icon) {
           x="351.523"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3272,7 +3272,7 @@ export function Keyboard({ className }: Icon) {
           x="394.031"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3285,8 +3285,8 @@ export function Keyboard({ className }: Icon) {
           x="394.281"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3297,7 +3297,7 @@ export function Keyboard({ className }: Icon) {
           x="436.789"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3310,8 +3310,8 @@ export function Keyboard({ className }: Icon) {
           x="437.039"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3322,7 +3322,7 @@ export function Keyboard({ className }: Icon) {
           x="479.547"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3335,8 +3335,8 @@ export function Keyboard({ className }: Icon) {
           x="479.797"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3347,7 +3347,7 @@ export function Keyboard({ className }: Icon) {
           x="522.297"
           y="9.228"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3360,8 +3360,8 @@ export function Keyboard({ className }: Icon) {
           x="522.547"
           y="9.478"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3372,7 +3372,7 @@ export function Keyboard({ className }: Icon) {
           x="660.695"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3385,8 +3385,8 @@ export function Keyboard({ className }: Icon) {
           x="660.945"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3397,7 +3397,7 @@ export function Keyboard({ className }: Icon) {
           x="660.695"
           y="179.016"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3410,8 +3410,8 @@ export function Keyboard({ className }: Icon) {
           x="660.945"
           y="179.266"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3422,7 +3422,7 @@ export function Keyboard({ className }: Icon) {
           x="618.25"
           y="179.016"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3435,8 +3435,8 @@ export function Keyboard({ className }: Icon) {
           x="618.5"
           y="179.266"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3447,7 +3447,7 @@ export function Keyboard({ className }: Icon) {
           x="575.805"
           y="179.016"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3460,8 +3460,8 @@ export function Keyboard({ className }: Icon) {
           x="576.055"
           y="179.266"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3473,7 +3473,7 @@ export function Keyboard({ className }: Icon) {
             x="57"
             y="179"
             fill="#fff"
-            fill-opacity="0.08"
+            fillOpacity="0.08"
             rx="4"
           ></rect>
           <path
@@ -3486,8 +3486,8 @@ export function Keyboard({ className }: Icon) {
             x="57.25"
             y="179.25"
             stroke="url(#keyboard-stroke)"
-            stroke-opacity="0.3"
-            stroke-width="0.5"
+            strokeOpacity="0.3"
+            strokeWidth="0.5"
             rx="2.75"
           ></rect>
         </g>
@@ -3498,7 +3498,7 @@ export function Keyboard({ className }: Icon) {
             x="105"
             y="179"
             fill="#fff"
-            fill-opacity="0.08"
+            fillOpacity="0.08"
             rx="4"
           ></rect>
           <path
@@ -3511,8 +3511,8 @@ export function Keyboard({ className }: Icon) {
             x="105.25"
             y="179.25"
             stroke="url(#keyboard-stroke)"
-            stroke-opacity="0.3"
-            stroke-width="0.5"
+            strokeOpacity="0.3"
+            strokeWidth="0.5"
             rx="2.75"
           ></rect>
         </g>
@@ -3523,7 +3523,7 @@ export function Keyboard({ className }: Icon) {
             x="9"
             y="179"
             fill="#fff"
-            fill-opacity="0.08"
+            fillOpacity="0.08"
             rx="4"
           ></rect>
           <path
@@ -3536,8 +3536,8 @@ export function Keyboard({ className }: Icon) {
             x="9.25"
             y="179.25"
             stroke="url(#keyboard-stroke)"
-            stroke-opacity="0.3"
-            stroke-width="0.5"
+            strokeOpacity="0.3"
+            strokeWidth="0.5"
             rx="2.75"
           ></rect>
         </g>
@@ -3548,7 +3548,7 @@ export function Keyboard({ className }: Icon) {
             x="500.141"
             y="179.016"
             fill="#fff"
-            fill-opacity="0.08"
+            fillOpacity="0.08"
             rx="4"
           ></rect>
           <path
@@ -3561,8 +3561,8 @@ export function Keyboard({ className }: Icon) {
             x="500.391"
             y="179.266"
             stroke="url(#keyboard-stroke)"
-            stroke-opacity="0.3"
-            stroke-width="0.5"
+            strokeOpacity="0.3"
+            strokeWidth="0.5"
             rx="2.75"
           ></rect>
         </g>
@@ -3574,7 +3574,7 @@ export function Keyboard({ className }: Icon) {
           x="153.18"
           y="179.016"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <rect
@@ -3583,8 +3583,8 @@ export function Keyboard({ className }: Icon) {
           x="153.43"
           y="179.266"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3595,7 +3595,7 @@ export function Keyboard({ className }: Icon) {
           x="618.25"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3608,8 +3608,8 @@ export function Keyboard({ className }: Icon) {
           x="618.5"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
@@ -3620,7 +3620,7 @@ export function Keyboard({ className }: Icon) {
           x="527.82"
           y="136.569"
           fill="#fff"
-          fill-opacity="0.08"
+          fillOpacity="0.08"
           rx="4"
         ></rect>
         <path
@@ -3633,14 +3633,14 @@ export function Keyboard({ className }: Icon) {
           x="528.07"
           y="136.819"
           stroke="url(#keyboard-stroke)"
-          stroke-opacity="0.3"
-          stroke-width="0.5"
+          strokeOpacity="0.3"
+          strokeWidth="0.5"
           rx="2.75"
         ></rect>
       </g>
       <path
         fill="#fff"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
         d="M687.999 38.297c.225-.195.445-.4.659-.614 4.789-4.788 4.789-12.553 0-17.341-4.788-4.79-12.552-4.79-17.341 0a12.64 12.64 0 00-.614.659l17.296 17.296zm-1.461 1.085l-16.92-16.92a12.195 12.195 0 00-.881 1.664l16.137 16.137a12.157 12.157 0 001.664-.881zm-3.565 1.526l-14.881-14.881a12.301 12.301 0 00-.342 2.203l13.02 13.02a12.296 12.296 0 002.203-.342zm-4.868.222L667.87 30.895a12.208 12.208 0 003.447 6.788 12.206 12.206 0 006.788 3.447z"
       ></path>
       <rect
@@ -3649,17 +3649,17 @@ export function Keyboard({ className }: Icon) {
         x="0.5"
         y="0.5"
         stroke="url(#board-stroke)"
-        stroke-opacity="0.05"
+        strokeOpacity="0.05"
         rx="11.5"
       ></rect>
       <defs>
         <linearGradient id="keyboard-stroke" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0" stop-color="#fff"></stop>
-          <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+          <stop offset="0" stopColor="#fff"></stop>
+          <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient id="board-stroke" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
-          <stop offset="1" stop-color="#fff"></stop>
+          <stop offset="0" stopColor="#fff" stopOpacity="0"></stop>
+          <stop offset="1" stopColor="#fff"></stop>
         </linearGradient>
       </defs>
     </svg>

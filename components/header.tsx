@@ -42,7 +42,10 @@ export default function Header() {
               ))}
             </ul>
           </nav>
-          <nav className={clsx(`h-ham fixed top-12 left-0 w-full transition-all ease-out-slow-in duration-400 bg-background md:opacity-0 md:pointer-events-none md:invisible`, (isOpen ? "max-md:visible max-md:opacity-100 max-md:transform-none": "max-md:invisible max-md:opacity-0 translate-y-[10px]"))}>
+          <nav className={clsx(
+            `h-ham fixed top-12 left-0 w-full transition-all ease-out-slow-in duration-400 bg-background md:opacity-0 md:pointer-events-none md:invisible`,
+            (isOpen ? "max-md:visible max-md:opacity-100 max-md:transform-none": "max-md:invisible max-md:opacity-0 translate-y-[10px]")
+          )}>
             <ul className={clsx(`flex flex-col text-md md:flex-row md:hidden`)}>
               {navElements.map((element) => ( //mobile
                 <li key={element} className={`border-b border-white/10 h-12`}>
