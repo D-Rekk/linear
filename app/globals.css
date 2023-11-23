@@ -338,10 +338,10 @@ a:hover > #logotype {
 .cards {
   --gap: 2.4rem;
   --row: minmax(0,1fr);
-  padding: 0 3.2rem;
   width: 100%;
-
-  display: grid;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  max-width: 100vw;
   grid-template-columns: [page-start] var(--row) [prose-start] var(--row) var(--row) var(--row) var(--row) [prose-end] var(--row) [page-end];
   grid-gap: var(--gap);
   & section {
@@ -358,4 +358,11 @@ a:hover > #logotype {
       @apply text-md
     }
   }
+}
+
+.card-container {
+  position: absolute;
+  top: -92px;
+  -webkit-mask-image: linear-gradient(black, transparent 70%);
+  mask-image: linear-gradient(black, transparent 70%);
 }

@@ -27,7 +27,7 @@ export default function Header() {
   const {isOpen, handleClick } = useResizeWindow()
 
   return (
-    <header className="h-12 flex border-0 border-b border-white/5 sticky top-0 header-blur z-[1]">
+    <header className="h-12 flex border-0 border-b border-white/5 sticky top-0 header-blur z-[2]">
       <Container className="flex mx-0 w-full text-md">
         <section className="flex items-center">
           <Link href="/" className="flex items-center">
