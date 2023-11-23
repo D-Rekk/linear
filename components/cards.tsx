@@ -17,7 +17,7 @@ export function Cards () {
       <div className="cards flex [&_section]:min-w-full [scroll-snap-type:x_mandatory] [&_section]:[scroll-snap-align:center] max-md:py-8 p-8
       md:grid [&_section]:p-8 md:[&_section]:p-13 [&_section]:rounded-[4.8rem] text-center [&_p]:text-gray [&_p]:mt-4">
         <section className="col-span-full  md:col-[auto/span_4]">
-        <div className="card-svg-container">
+        <div className="card-svg-container w-full">
           <Keyboard />
         </div>
           <h3>Built for your keyboard</h3>
@@ -26,16 +26,16 @@ export function Cards () {
             everything. Literally everything.
           </p>
         </section>
-        <section className="col-span-full  md:col-[auto/span_2]">
-          <div className="card-svg-container">
-            <Lightning className="-mb-[16rem] -mt-[12.4rem] translate-x-[-14%] scale-90" />
+        <section className="col-span-full md:col-[auto/span_2]">
+          <div className="card-svg-container scale-[1.15] w-full h-full absolute">
+            <Lightning />
           </div>
           <h3>Breathtakingly fast</h3>
           <p>Built for speed with 50ms interactions and real-time sync.</p>
         </section>
         <section className="col-span-full  md:col-[auto/span_2]">
         <div className="card-svg-container">
-          <LogoStencil className="-mb-[16rem] -mt-[12.4rem] translate-x-[-24%] scale-90" />
+          <LogoStencil className="scale-[0.8] -mb-[20rem] -mt-[15rem]" />
         </div>
           <h3>Designed for modern software teams</h3>
           <p>Comes with built-in workflows that create focus and routine.</p>
