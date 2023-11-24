@@ -1411,6 +1411,13 @@ export function LogoStencil({ className }: Icon) {
   );
 }
 
+declare module 'react' {
+  interface CSSProperties {
+    '--index'?: number | string;
+  }
+}
+
+
 export function Lightning({ className }: Icon) {
   return (
     <svg
@@ -1847,152 +1854,152 @@ export function Lightning({ className }: Icon) {
       </g>
       <g>
         <path
-          style={{"--index":0} as CSSProperties}
+          style={{"--index":0}}
           stroke="url(#bolt-radial)"
           d="M223.031 111.534a2.535 2.535 0 012.534-2.534h8.869a2.535 2.535 0 110 5.068h-8.869a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":1} as CSSProperties}
+          style={{"--index":1}}
           stroke="url(#bolt-radial)"
           d="M211.628 121.67a2.535 2.535 0 012.534-2.534h30.409a2.535 2.535 0 010 5.068h-30.409a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":2} as CSSProperties}
+          style={{"--index":2}}
           stroke="url(#bolt-radial)"
           d="M204.026 131.806a2.535 2.535 0 012.534-2.534h38.011a2.535 2.535 0 010 5.068H206.56a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":3} as CSSProperties}
+          style={{"--index":3}}
           stroke="url(#bolt-radial)"
           d="M196.424 141.942a2.535 2.535 0 012.534-2.534h45.613a2.535 2.535 0 010 5.068h-45.613a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":4} as CSSProperties}
+          style={{"--index":4}}
           stroke="url(#bolt-radial)"
           d="M188.822 152.079c0-1.4 1.134-2.535 2.534-2.535h53.215a2.535 2.535 0 010 5.069h-53.215a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":5} as CSSProperties}
+          style={{"--index":5}}
           stroke="url(#bolt-radial)"
           d="M181.22 162.215c0-1.4 1.134-2.534 2.534-2.534h60.817a2.534 2.534 0 110 5.068h-60.817a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":6} as CSSProperties}
+          style={{"--index":6}}
           stroke="url(#bolt-radial)"
           d="M172.351 172.351c0-1.4 1.134-2.534 2.534-2.534h69.686a2.534 2.534 0 110 5.068h-69.686a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":7} as CSSProperties}
+          style={{"--index":7}}
           stroke="url(#bolt-radial)"
           d="M164.749 182.487c0-1.4 1.134-2.534 2.534-2.534h77.288a2.534 2.534 0 110 5.068h-77.288a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":8} as CSSProperties}
+          style={{"--index":8}}
           stroke="url(#bolt-radial)"
           d="M157.147 192.623c0-1.4 1.134-2.534 2.534-2.534h84.89a2.534 2.534 0 110 5.068h-84.89a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":9} as CSSProperties}
+          style={{"--index":9}}
           stroke="url(#bolt-radial)"
           d="M149.544 202.759a2.535 2.535 0 012.535-2.534h92.492a2.535 2.535 0 010 5.068h-92.492a2.534 2.534 0 01-2.535-2.534z"
         ></path>
         <path
-          style={{"--index":10} as CSSProperties}
+          style={{"--index":10}}
           stroke="url(#bolt-radial)"
           d="M141.942 212.895a2.535 2.535 0 012.534-2.534h100.095a2.535 2.535 0 010 5.068H144.476a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":11} as CSSProperties}
+          style={{"--index":11}}
           stroke="url(#bolt-radial)"
           d="M134.34 223.031a2.535 2.535 0 012.534-2.534h107.697a2.535 2.535 0 010 5.068H136.874a2.534 2.534 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":12} as CSSProperties}
+          style={{"--index":12}}
           stroke="url(#bolt-radial)"
           d="M126.738 233.167a2.535 2.535 0 012.534-2.534h115.299a2.535 2.535 0 010 5.069H129.272a2.535 2.535 0 01-2.534-2.535z"
         ></path>
         <path
-          style={{"--index":13} as CSSProperties}
+          style={{"--index":13}}
           stroke="url(#bolt-radial)"
           d="M119.136 243.304c0-1.4 1.135-2.534 2.534-2.534h190.052a2.533 2.533 0 110 5.068H121.67a2.535 2.535 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":14} as CSSProperties}
+          style={{"--index":14}}
           stroke="url(#bolt-radial)"
           d="M111.534 253.44c0-1.4 1.135-2.534 2.534-2.534h198.921a2.533 2.533 0 110 5.068H114.068a2.535 2.535 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":15} as CSSProperties}
+          style={{"--index":15}}
           stroke="url(#bolt-radial)"
           d="M109 263.576c0-1.4 1.135-2.534 2.534-2.534h195.12a2.533 2.533 0 110 5.068h-195.12a2.535 2.535 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":16} as CSSProperties}
+          style={{"--index":16}}
           stroke="url(#bolt-radial)"
           d="M120.403 273.712c0-1.4 1.135-2.534 2.534-2.534h183.717a2.533 2.533 0 110 5.068H122.937a2.535 2.535 0 01-2.534-2.534z"
         ></path>
         <path
-          style={{"--index":17} as CSSProperties}
+          style={{"--index":17}}
           stroke="url(#bolt-radial)"
           d="M297.785 283.848c0 1.4-1.134 2.534-2.534 2.534H179.953a2.533 2.533 0 110-5.068h115.298c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
-          style={{"--index":18} as CSSProperties}
+          style={{"--index":18}}
           stroke="url(#bolt-radial)"
           d="M290.183 293.984c0 1.4-1.134 2.534-2.534 2.534H179.953a2.533 2.533 0 110-5.068h107.696c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
-          style={{"--index":19} as CSSProperties}
+          style={{"--index":19}}
           stroke="url(#bolt-radial)"
           d="M282.581 304.12c0 1.4-1.134 2.534-2.534 2.534H179.953a2.533 2.533 0 110-5.068h100.094c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
-          style={{"--index":20} as CSSProperties}
+          style={{"--index":20}}
           stroke="url(#bolt-radial)"
           d="M274.979 314.256c0 1.4-1.135 2.534-2.534 2.534h-92.492a2.533 2.533 0 110-5.068h92.492a2.535 2.535 0 012.534 2.534z"
         ></path>
         <path
-          style={{"--index":21} as CSSProperties}
+          style={{"--index":21}}
           stroke="url(#bolt-radial)"
           d="M267.377 324.393a2.535 2.535 0 01-2.534 2.534h-84.89a2.534 2.534 0 110-5.069h84.89a2.535 2.535 0 012.534 2.535z"
         ></path>
         <path
-          style={{"--index":22} as CSSProperties}
+          style={{"--index":22}}
           stroke="url(#bolt-radial)"
           d="M259.775 334.529a2.535 2.535 0 01-2.534 2.534h-77.288a2.534 2.534 0 110-5.068h77.288a2.534 2.534 0 012.534 2.534z"
         ></path>
         <path
-          style={{"--index":23} as CSSProperties}
+          style={{"--index":23}}
           stroke="url(#bolt-radial)"
           d="M252.173 344.665a2.535 2.535 0 01-2.534 2.534h-69.686a2.534 2.534 0 110-5.068h69.686a2.534 2.534 0 012.534 2.534z"
         ></path>
         <path
-          style={{"--index":24} as CSSProperties}
+          style={{"--index":24}}
           stroke="url(#bolt-radial)"
           d="M243.304 354.801a2.535 2.535 0 01-2.534 2.534h-60.817a2.534 2.534 0 110-5.068h60.817a2.534 2.534 0 012.534 2.534z"
         ></path>
         <path
-          style={{"--index":25} as CSSProperties}
+          style={{"--index":25}}
           stroke="url(#bolt-radial)"
           d="M235.702 364.937c0 1.4-1.135 2.534-2.535 2.534h-53.214a2.533 2.533 0 110-5.068h53.214c1.4 0 2.535 1.135 2.535 2.534z"
         ></path>
         <path
-          style={{"--index":26} as CSSProperties}
+          style={{"--index":26}}
           stroke="url(#bolt-radial)"
           d="M228.099 375.073c0 1.4-1.134 2.534-2.534 2.534h-45.612a2.533 2.533 0 110-5.068h45.612c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
-          style={{"--index":27} as CSSProperties}
+          style={{"--index":27}}
           stroke="url(#bolt-radial)"
           d="M220.497 385.209c0 1.4-1.134 2.534-2.534 2.534h-38.01a2.533 2.533 0 110-5.068h38.01c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
-          style={{"--index":28} as CSSProperties}
+          style={{"--index":28}}
           stroke="url(#bolt-radial)"
           d="M212.895 395.345c0 1.4-1.134 2.534-2.534 2.534h-30.408a2.533 2.533 0 110-5.068h30.408c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
         <path
-          style={{"--index":29} as CSSProperties}
+          style={{"--index":29}}
           stroke="url(#bolt-radial)"
           d="M201.492 405.481c0 1.4-1.134 2.535-2.534 2.535h-8.869a2.534 2.534 0 010-5.069h8.869c1.4 0 2.534 1.135 2.534 2.534z"
         ></path>
