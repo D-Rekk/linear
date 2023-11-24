@@ -348,7 +348,7 @@ a:hover > #logotype {
     position: relative;
     border-radius: 6.4rem;
     outline: 1px solid rgba(255, 255, 255, 0.1);
-
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -371,7 +371,20 @@ a:hover > #logotype {
         max-height: 51.8rem;
         height: auto;
         margin-top: 5.8rem;
-        @apply mx-auto
+        @apply mx-auto;
+        & g:nth-of-type(4) path {
+          fill: transparent;
+          animation-duration: 2250ms;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+          animation-fill-mode: none;
+          animation-play-state: running;
+          animation-name: lightning-animation;
+          animation-timeline: auto;
+          animation-range: normal;
+          animation-delay: calc(var(--index) * 20ms);
+        }
       }
     }
     & svg {
@@ -380,6 +393,14 @@ a:hover > #logotype {
       -webkit-user-select: none;
     }
   }
+}
 
-  
+@keyframes lightning-animation {
+  0%, 9%, 11%, 100% {
+    fill: transparent;
+  }
+
+  10% {
+    fill: rgb(255, 255, 255);
+  }
 }
