@@ -1,4 +1,7 @@
+import clsx from "clsx"
+import { Button } from "./button"
 import { Keyboard, Lightning, LogoStencil } from "./icons/illustrations"
+import { StencilCard } from "./stencil-card"
 
 export function Cards () {
   return (
@@ -14,12 +17,14 @@ export function Cards () {
           Linear combines UI elegance with world-class performance.
         </p>
       </div>
-      <div className="cards flex [&_section]:min-w-full [scroll-snap-type:x_mandatory] [&_section]:[scroll-snap-align:center] max-md:py-8 p-8
-      md:grid [&_section]:p-8 md:[&_section]:p-13 [&_section]:rounded-[4.8rem] text-center [&_p]:text-gray [&_p]:mt-4">
+      <div
+        className="cards flex [&_section]:min-w-full [scroll-snap-type:x_mandatory] [&_section]:[scroll-snap-align:center] max-md:py-8 p-8
+      md:grid [&_section]:p-8 md:[&_section]:p-13 [&_section]:rounded-[4.8rem] text-center [&_p]:text-gray [&_p]:mt-4"
+      >
         <section className="col-span-full  md:col-[auto/span_4]">
-        <div className="card-svg-container w-full">
-          <Keyboard />
-        </div>
+          <div className="card-svg-container w-full">
+            <Keyboard />
+          </div>
           <h3>Built for your keyboard</h3>
           <p>
             Fly through your tasks with rapid-fire keyboard shortcuts for
@@ -33,16 +38,31 @@ export function Cards () {
           <h3>Breathtakingly fast</h3>
           <p>Built for speed with 50ms interactions and real-time sync.</p>
         </section>
-        <section className="col-span-full  md:col-[auto/span_2]">
-        <div className="card-svg-container">
-          <LogoStencil className="scale-[0.8] -mb-[20rem] -mt-[15rem]" />
-        </div>
+        <section className="col-span-full  md:col-[auto/span_2] relative">
+          <div className="card-svg-container">
+            <LogoStencil className="scale-[0.8] -mb-[20rem] -mt-[15rem]" />
+          </div>
           <h3>Designed for modern software teams</h3>
           <p>Comes with built-in workflows that create focus and routine.</p>
+          <Button
+            href=""
+            icon
+            variant="secondary"
+            size="custom"
+            className={clsx(
+              "text-md px-6 h-12 md:text-xs md:px-3 md:h-7",
+              "whitespace-nowrap absolute bottom-[20rem]",
+              "md:stencil-link"
+            )}
+          >
+            <span className="bg-white/10 rounded-[.6rem] max-md:py-1 max-md:px-2 md:px-[.6rem] mr-[.6rem] -ml-[.6rem]">
+              Linear method
+            </span>
+            Product principles
+          </Button>
         </section>
         <section className="col-span-full  md:col-[3/-1]">
-        <div className="card-svg-container">
-        </div>
+          <div className="card-svg-container"></div>
           <h3>Meet your command line</h3>
           <p>Complete any action in seconds with the global command menu.</p>
         </section>

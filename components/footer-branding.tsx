@@ -9,10 +9,10 @@ export function FooterBranding() {
       <Link href="/" className="flex items-center text-gray/60 hover:text-hover transition-color-hover font-medium">
         <Logo className="w-[1.8rem] h-[1.8rem] mr-2" />
         <p id="logotype" className="background-clip logotype lg:animate-logotype
-        md:max-lg:animate-none max-md:animate-logotype transition-color-hover">Linear - Designed Worldwide</p>
+        md:max-lg:animate-none max-md:animate-logotype transition-color-hover whitespace-nowrap">Linear - Designed Worldwide</p>
       </Link>
       <Loader />
-      <div className="flex gap-6">
+      <div className="flex gap-3 md:gap-6">
         <Link href={"#"}>
           <TwitterIcon className="w-6 md:w-[1.8rem] fill-gray/60 hover:fill-hover transition-color-hover" />
         </Link>

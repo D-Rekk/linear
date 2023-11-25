@@ -387,6 +387,12 @@ a:hover > #logotype {
         }
       }
     }
+
+
+  &:nth-of-type(3):hover a { /*Stencil */
+    opacity: 1;
+    transform: none;
+  }
     & svg {
       pointer-events: none;
       user-select: none;

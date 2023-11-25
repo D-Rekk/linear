@@ -70,6 +70,12 @@ const config: Config = {
       ".logotype":{
         backgroundSize: "100% 30rem",
         backgroundImage: "conic-gradient(from var(--angle) at 50% 50%, theme(colors.gray/60%) 40%, #FFFFFFFF 50%, theme(colors.gray/60%) 60%)",
+      },
+      ".stencil-link": {
+        opacity: "0",
+        transform: "translateY(30%)",
+        transition: "220ms ease 0s",
+        transitionproperty: "opacity, transform, background",
       }
     }),
     backgroundImage: {

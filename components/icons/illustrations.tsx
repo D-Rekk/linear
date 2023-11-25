@@ -1,4 +1,3 @@
-import { CSSProperties } from "react"
 import { Icon } from "./socials"
 
 export function LeftArrow({ className }: Icon) {
