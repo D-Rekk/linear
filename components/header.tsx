@@ -6,6 +6,7 @@ import { Button } from "./button";
 import HamburgerIcon from "./icons/hamburger"
 import { clsx } from "clsx"
 import useResizeWindow from "./hooks/hooks"
+import { useEffect } from "react"
 
 const navElements = [
   "Features",
@@ -22,12 +23,27 @@ const itemsToHide = [
   "Integrations"
 ]
 
+const setBodyStyles = (isActive : boolean) => {
+  if (isActive){
+    document.documentElement.classList.add("max-md:overflow-y-hidden");
+    document.documentElement.classList.add("max-md:h-[100lvh]");
+  } else {
+    document.documentElement.classList.remove("max-md:overflow-y-hidden");
+    document.documentElement.classList.remove("max-md:h-[100lvh]");
+  }
+}
 export default function Header() {
 
-  const {isOpen, handleClick } = useResizeWindow()
+  const {isOpen, handleClick} = useResizeWindow()
+
+  useEffect(() => {
+      setBodyStyles(isOpen)
+    return () => {setBodyStyles(false)}
+  }, [isOpen])
 
   return (
     <header className="h-12 flex border-0 border-b border-white/5 sticky top-0 header-blur z-[2]">
+      <div className="hidden max-md:overflow-y-hidden max-md:h-[100lvh]"></div>
       <Container className="flex mx-0 w-full text-md">
         <section className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -49,7 +65,7 @@ export default function Header() {
             <ul className={clsx(`flex flex-col text-md md:flex-row md:hidden`)}>
               {navElements.map((element) => ( //mobile
                 <li key={element} className={`border-b border-white/10 h-12`}>
-                  <Link href="#" className="hover:text-gray/60 transition-colors inline-flex items-center h-full px-8">{element}</Link>
+                  <Link href="#" className="hover:text-gray/60 transition-colors flex items-center h-full px-8">{element}</Link>
                 </li>
               ))}
             </ul>
