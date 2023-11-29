@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import { Button } from "./button"
 import { Keyboard, Lightning, LogoStencil } from "./icons/illustrations"
-import { StencilCard } from "./stencil-card"
+import { KeyboardCard } from "./keyboard-card"
 
 export function Cards () {
   return (
@@ -21,16 +21,7 @@ export function Cards () {
         className="cards flex [&_section]:min-w-full [scroll-snap-type:x_mandatory] [&_section]:[scroll-snap-align:center] max-md:py-8 p-8
       md:grid [&_section]:p-8 md:[&_section]:p-13 [&_section]:rounded-[4.8rem] text-center [&_p]:text-gray [&_p]:mt-4"
       >
-        <section className="col-span-full  md:col-[auto/span_4]">
-          <div className="card-svg-container w-full">
-            <Keyboard />
-          </div>
-          <h3>Built for your keyboard</h3>
-          <p>
-            Fly through your tasks with rapid-fire keyboard shortcuts for
-            everything. Literally everything.
-          </p>
-        </section>
+        <KeyboardCard />
         <section className="col-span-full md:col-[auto/span_2]">
           <div className="card-svg-container scale-[1.15] w-full h-full absolute">
             <Lightning />

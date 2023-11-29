@@ -388,6 +388,26 @@ a:hover > #logotype {
       }
     }
 
+    &:nth-of-type(1) g[data-key]{ /*Keyboard */
+      & [data-active="true"] rect{
+        &:first-child{ fill-opacity: 0.4; }
+        &:last-child{ fill-opacity: 1; }
+      }
+      &[data-active="true"] path {
+        fill-opacity: 1;
+      }
+      &[data-pressed="true"] rect:first-child {
+        fill-opacity: 0.2;
+      }
+      &:is(rect, path){
+        -webkit-transition:240ms;
+        transition: 240ms;
+        transition-timing-function: ease;
+        -webkit-transition-property: fill-opacity, stroke-opacity;
+        transition-property: fill-opacity, stroke-opacity;
+      }
+      
+    }
 
   &:nth-of-type(3):hover a { /*Stencil */
     opacity: 1;
