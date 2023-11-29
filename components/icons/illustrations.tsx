@@ -1394,7 +1394,7 @@ export function LogoStencil({ className }: Icon) {
           colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+          <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
           <feBlend
             in="SourceGraphic"
             in2="BackgroundImageFix"
@@ -2028,7 +2028,7 @@ export function Lightning({ className }: Icon) {
           colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+          <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
           <feBlend
             in="SourceGraphic"
             in2="BackgroundImageFix"
@@ -2454,7 +2454,7 @@ export function Keyboard({ className }: Icon) {
           rx="2.75"
         ></rect>
       </g>
-      <g data-key="c" data-pressed="true">
+      <g data-key="c">
         <rect
           width="38.756"
           height="38.756"
@@ -2529,7 +2529,7 @@ export function Keyboard({ className }: Icon) {
           rx="2.75"
         ></rect>
       </g>
-      <g data-key="shift" data-active="true">
+      <g data-key="shiftleft">
         <rect
           width="90.431"
           height="38.756"
@@ -2804,7 +2804,7 @@ export function Keyboard({ className }: Icon) {
           rx="2.75"
         ></rect>
       </g>
-      <g data-key="p" data-active="true">
+      <g data-key="p">
         <rect
           width="38.756"
           height="38.756"
@@ -3527,7 +3527,7 @@ export function Keyboard({ className }: Icon) {
             rx="2.75"
           ></rect>
         </g>
-        <g data-key="meta" data-active="true">
+        <g data-key="meta">
           <rect
             width="44"
             height="39"
@@ -3649,7 +3649,7 @@ export function Keyboard({ className }: Icon) {
           rx="2.75"
         ></rect>
       </g>
-      <g data-key="shift">
+      <g data-key="shiftright">
         <rect
           width="86.74"
           height="38.756"
