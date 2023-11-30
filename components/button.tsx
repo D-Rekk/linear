@@ -48,3 +48,11 @@ export function Button ({children, href, variant, size, icon = false, className,
     </button>
   );
 }
+
+export function ButtonTooltip ({children}: Children){
+  return (
+    <span className="bg-white/10 rounded-[.6rem] max-md:py-1 max-md:px-2 md:px-[.6rem] mr-[.6rem] -ml-[.6rem]">
+     {children}
+  </span>
+  )
+}

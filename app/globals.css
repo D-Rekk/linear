@@ -430,3 +430,31 @@ a:hover > #logotype {
     fill: rgb(255, 255, 255);
   }
 }
+
+.keyboard-carousel {
+  scroll-snap-align: center;
+  flex-direction: row;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin: 3.2rem 0;
+  /* -webkit-mask-image: linear-gradient(to right, transparent, black 40%, black calc(60%), transparent 100%); */
+  /* Is there a way to visually hide the scrollbar for -webkit?  */
+  /* -ms-overflow-style: none; for Internet Explorer, Edge */
+  /* scrollbar-width: none; for Firefox */
+  /* &::-webkit-scrollbar { Webkit, Chromium
+    display: none;
+  } */
+  &::before, &::after {
+    content:"";
+    min-width: 30rem;
+    height: 1px;
+  }
+  & > * {
+   scroll-snap-align: center;
+  }
+}
