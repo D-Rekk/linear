@@ -1,10 +1,10 @@
 import { Children } from "@/app/types"
 import { cva, VariantProps } from "class-variance-authority"
-import Link from "next/link"
 import { LeftArrow } from "./icons/illustrations"
 import clsx from "clsx"
+import { ButtonHTMLAttributes } from "react"
 
-type T_Button = Children & {
+type T_Button =  ButtonHTMLAttributes<HTMLButtonElement> & Children & {
   href: string,
   icon?: boolean,
   className?: string
@@ -36,15 +36,15 @@ export function IconWrapper ({children}: Children){
   return <span className="icon-wrapper">{children}</span>;
 }
 
-export function Button ({children, href, variant, size, icon = false, className} :T_Button){
+export function Button ({children, href, variant, size, icon = false, className, ...props} :T_Button){
   return (
-    <Link className={clsx(buttonClasses({ variant, size }), className)} href={href}>
+    <button className={clsx(buttonClasses({ variant, size }), className)} {...props}>
       {children}
       {icon ? (
         <IconWrapper>
           <LeftArrow />
         </IconWrapper>
       ) : null}
-    </Link>
+    </button>
   );
 }
