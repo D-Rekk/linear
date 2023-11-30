@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react"
+import { useCallback, useEffect, useRef } from "react"
 import { Keyboard } from "./icons/illustrations";
 import { Button, ButtonTooltip } from "./button"
 import clsx from "clsx"
@@ -28,8 +28,8 @@ const items = [
 ]
 
 export function KeyboardCard() {
-  const sectionRef = useRef<HTMLElement>(null)
 
+  const sectionRef = useRef<HTMLElement>(null)
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       const checkedKey = checkKey(event);
@@ -52,15 +52,36 @@ export function KeyboardCard() {
     };
   }, []);
 
+  const carouselRef = useRef<HTMLDivElement>(null);
+  let scrollRef = useRef<any>({ scrollToElement: () => {}, scrollInterval: null });
+
+  useEffect(() => {
+    if (carouselRef.current) scrollRef.current = Scroll(carouselRef.current);
+
+    return () => {
+      if (scrollRef.current.scrollInterval) {
+        clearInterval(scrollRef.current.refscrollInterval);
+      }
+    };
+  }, []);
+
+  const handleButtonClick = useCallback((index: number) => {
+    if (!scrollRef.current.scrollInterval || !carouselRef.current) return;
+    clearInterval(scrollRef.current.scrollInterval);
+
+    scrollRef.current.scrollToElement(index);
+    const { scrollInterval } = Scroll(carouselRef.current, index);
+    scrollRef.current.scrollInterval = scrollInterval;
+  }, [])
 
   return (
     <section ref={sectionRef} className="col-span-full  md:col-[auto/span_4]">
     <div className="card-svg-container w-full">
       <Keyboard />
     </div>
-    <div className="keyboard-carousel">
+    <div className="keyboard-carousel" ref={carouselRef}>
       {items.map(({tooltip, description},i) => (
-        <ButtonWithTooltip key={i} tooltip={tooltip} description={description}  />
+        <ButtonWithTooltip key={i} tooltip={tooltip} description={description} onClick={() => handleButtonClick(i)}  />
       ))}
     </div>
     <h3>Built for your keyboard</h3>
@@ -93,10 +114,12 @@ const checkKey = (event: KeyboardEvent) => {
 type T_ButtonWithTooltip = {
   tooltip: string;
   description: string
+  onClick: () => void
 }
-const ButtonWithTooltip = ({ tooltip, description }: T_ButtonWithTooltip) => {
+const ButtonWithTooltip = ({ tooltip, description, onClick }: T_ButtonWithTooltip) => {
   return (
     <Button
+      onClick={onClick}
       href=""
       variant="secondary"
       size="custom"
@@ -109,4 +132,26 @@ const ButtonWithTooltip = ({ tooltip, description }: T_ButtonWithTooltip) => {
       {description}
     </Button>
   );
+};
+
+const Scroll = (wrapper: HTMLElement, index?: number) => {
+  const wrapperChildren = Array.from(wrapper.children);
+  const length = wrapperChildren.length;
+  function scrollToElement(index: number) {
+    const childElement = wrapperChildren[index] as HTMLElement;
+    const wrapperWidth = wrapper.clientWidth;
+    const childWidth = childElement.offsetWidth;
+    const childOffsetLeft = childElement.offsetLeft;
+    const scrollLeftOffset = childOffsetLeft - (wrapperWidth - childWidth) / 2;
+    wrapper.scroll({
+      left: scrollLeftOffset,
+      behavior: "smooth",
+    });
+  }
+  let startingIndex = index ?? 0;
+  const scrollInterval = setInterval(() => {
+    startingIndex == length - 1 ? (startingIndex = 0) : startingIndex++;
+    scrollToElement(startingIndex);
+  }, 2500);
+  return {scrollInterval, scrollToElement};
 };
