@@ -409,7 +409,7 @@ a:hover > #logotype {
       
     }
 
-  &:nth-of-type(3):hover a { /*Stencil */
+  &:nth-of-type(3):hover button { /*Stencil */
     opacity: 1;
     transform: none;
   }
@@ -458,13 +458,3 @@ a:hover > #logotype {
    scroll-snap-align: center;
   }
 }
-
-/*  TODO: Implement a wrapper around .keyboard-carousel
-    to hide the scrollbar
-    height: 75px;
-    position: relative;
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    align-items: flex-start;
-*/
