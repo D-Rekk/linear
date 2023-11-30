@@ -54,7 +54,9 @@ const checkKey = (event: KeyboardEvent) => {
       break;
     }
     default:
-      pressedKey = event.key;
+      if (event.code.startsWith("Digit")) {
+        pressedKey = event.code.substring(5); // Extract the numeric part
+      } else pressedKey = event.key
       break;
   }
   return pressedKey.toLocaleLowerCase()
